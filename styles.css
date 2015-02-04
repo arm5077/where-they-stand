@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100,500);
+
+body {
+	font-family: Georgia;
+	
+}
+
+.prompt{
+	width: 80%;
+	margin: auto;
+	margin-top: 15px;
+	font-size:14pt;
+	line-height:1.4em;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+
+}
+
+	.prompt tr {
+		display:block;
+		
+	}
+
+	.prompt .issue {
+		width:25%;
+		min-width: 145px;
+		vertical-align:top;
+		text-align:right;
+		padding-right:30px;
+	}
+
+	.prompt .highlighted {
+		font-family: Roboto, sans-serif;
+		background-color: #952226;
+		padding:7px;
+		font-size:20pt;
+		font-weight:900;
+		text-transform:uppercase;
+		color:white;
+		position:relative;
+		top:4px;
+		display: inline-block;
+		text-align:right;
+	}
+	
+	.prompt .text {
+		padding-left:30px;
+	}
+
+.candidate {
+	width:80%;
+	margin: auto;
+	background-color:rgba(157,191,185,.5);
+	padding:20px;
+}
+
+	.candidate table {
+		width:100%;
+	}
+
+	.candidate tr {
+		width:100%;
+	}
+
+	.portrait-rail {
+		vertical-align: top;
+		width: 25%;
+		min-width: 145px;
+		padding-right:30px;
+		border-right: 1px solid black;
+		text-align:right;
+		
+	}
+	
+	.candidate-name {
+		font-family: Roboto, sans-serif;
+		font-size: 20pt;
+		font-weight: 900;
+		text-align: right;
+		text-transform: uppercase;
+	}
+	
+	.portrait {
+		width: 100px;
+		height: 100px;
+		background-image: url("img/bush.png");
+		background-size: cover;
+		border-radius: 50%;
+		border: 10px solid rgba(157,191,185,1);
+		background-position-x: 63%;
+		display: inline-block;
+	}
+	
+	.content {
+		padding-left: 30px;
+	}
