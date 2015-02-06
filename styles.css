@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100,500);
 
 body {
 	font-family: Roboto;
@@ -149,13 +149,14 @@ body {
 	
 	
 	.candidate:nth-child(2n){
-		background-color: rgba(153,137,119,.5)
+		background-color: rgba(0,71,59,.3)
 	}
 	
 		.candidate:nth-child(2n) .portrait {
-			border: 10px solid rgba(153,137,119,.5);
+			border: 10px solid rgba(0,71,59,.5)
 		}
 		
 		.candidate:nth-child(2n) .content .quote {
-			background-color: rgba(153,137,119,1);
+			background-color: rgba(0,71,59,.5);
+
 		}
