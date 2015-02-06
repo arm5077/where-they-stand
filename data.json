@@ -1,0 +1,83 @@
+data = {
+    "opinionators": [
+        {
+            "name": "Jeb Bush",
+            "title": "Presidential candidate",
+            "img": "img/bush.png"
+        }
+    ],
+    "issues": [
+        {
+            "title": "The issue:",
+            "text": "This is where we'll explain a bit about the issue at hand. Let's not forget that the \"issue\" can be a sub-issue of the main page's prompt! That's allowed. <em>We just don't care.</em>",
+            "viewpoints": [
+                {
+                    "name": "Jeb Bush",
+                    "position": "Supports",
+					"coloring": "supports",
+                    "elaboration": "<p>This is a bunch of text. It goes on and on explaining the position. Some would say it goes on too long!</p><p>But not me. I like long paragraphs. But I worry that they look bad on the Internet. And if they look bad on the Internet... Well, let's just say that they probably shouldn't go on much longer than this.</p>",
+                    "quote": {
+                        "text": "Yes, Virginia, there is a Santa Claus. And I'm not afraid to be me.",
+                        "dateline": "Feb. 9, 2014 at fundraiser"
+                    }
+                },
+				{
+                    "name": "Ted Cruz",
+                    "position": "Opposes",
+					"coloring": "opposes",
+                    "elaboration": "<p>This is a bunch of text. It goes on and on explaining the position. Some would say it goes on too long!</p><p>But not me. I like long paragraphs. But I worry that they look bad on the Internet. And if they look bad on the Internet... Well, let's just say that they probably shouldn't go on much longer than this.</p>",
+                    "quote": {
+                        "text": "I hate this! I hate it so much! I haaaaaate it.",
+                        "dateline": "Jan. 2, 2014 at speech to Iowa Republican Club"
+                    }
+                },
+				{
+                    "name": "Ted Cruz",
+                    "position": "Opposes",
+					"coloring": "opposes",
+                    "elaboration": "<p>This is a bunch of text. It goes on and on explaining the position. Some would say it goes on too long!</p><p>But not me. I like long paragraphs. But I worry that they look bad on the Internet. And if they look bad on the Internet... Well, let's just say that they probably shouldn't go on much longer than this.</p>",
+                    "quote": {
+                        "text": "I hate this! I hate it so much! I haaaaaate it.",
+                        "dateline": "Jan. 2, 2014 at speech to Iowa Republican Club"
+                    }
+                }
+            ]
+        },
+		{
+            "title": "The issue:",
+            "text": "This is where we'll explain a bit about the issue at hand. Let's not forget that the \"issue\" can be a sub-issue of the main page's prompt! That's allowed. <em>We just don't care.</em>",
+            "viewpoints": [
+                {
+                    "name": "Jeb Bush",
+                    "position": "Supports",
+					"coloring": "supports",
+                    "elaboration": "<p>This is a bunch of text. It goes on and on explaining the position. Some would say it goes on too long!</p><p>But not me. I like long paragraphs. But I worry that they look bad on the Internet. And if they look bad on the Internet... Well, let's just say that they probably shouldn't go on much longer than this.</p>",
+                    "quote": {
+                        "text": "Yes, Virginia, there is a Santa Claus. And I'm not afraid to be me.",
+                        "dateline": "Feb. 9, 2014 at fundraiser"
+                    }
+                },
+				{
+                    "name": "Ted Cruz",
+                    "position": "Opposes",
+					"coloring": "opposes",
+                    "elaboration": "<p>This is a bunch of text. It goes on and on explaining the position. Some would say it goes on too long!</p><p>But not me. I like long paragraphs. But I worry that they look bad on the Internet. And if they look bad on the Internet... Well, let's just say that they probably shouldn't go on much longer than this.</p>",
+                    "quote": {
+                        "text": "I hate this! I hate it so much! I haaaaaate it.",
+                        "dateline": "Jan. 2, 2014 at speech to Iowa Republican Club"
+                    }
+                },
+				{
+                    "name": "Ted Cruz",
+                    "position": "Opposes",
+					"coloring": "opposes",
+                    "elaboration": "<p>This is a bunch of text. It goes on and on explaining the position. Some would say it goes on too long!</p><p>But not me. I like long paragraphs. But I worry that they look bad on the Internet. And if they look bad on the Internet... Well, let's just say that they probably shouldn't go on much longer than this.</p>",
+                    "quote": {
+                        "text": "I hate this! I hate it so much! I haaaaaate it.",
+                        "dateline": "Jan. 2, 2014 at speech to Iowa Republican Club"
+                    }
+                }
+            ]
+        }
+    ]
+};

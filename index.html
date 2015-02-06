@@ -1,38 +1,46 @@
 <!doctype html>
-<html>
+<html ng-app="opinionApp">
 
 <head>
 
-	<!-- Angular -- >
+	<!-- Angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
 	
 	<!-- Site-specific styles -->
 	<link rel="stylesheet" href="styles.css" />
 	
+	<!-- The data -->
+	<script src="data.json"></script>
+	
 	
 </head>
 
-<body>
+<body ng-controller="opinionController">
 
-<div class="issue">
+<div class="issue" ng-repeat="issue in issues">
 	<div class="prompt">
 		<table><tr>	
-			<td class="issue"><div class="highlighted">The issue:</div></td> 
-			<td class="text">This is where we'll explain a bit about the issue at hand. Let's not forget that the "issue" can be a sub-issue of the main page's prompt! That's allowed. <em>We just don't care.</em></td>
+			<td class="issue"><div class="highlighted">{{issue.title}}</div></td> 
+			<td class="text" ng-bind-html="renderHTML(issue.text)"></td>
 		</tr></table>
 	</div>
 	
-	<div class = "candidate">
-		<table><tr>
-			<td class = "portrait-rail">
-				<div class = "portrait"></div>
-				<div class = "candidate-name">Jeb Bush</div>
-			</td>
-			<td class = "content">
-				<div class = "header">Supports</div>
-				<p>This is a bunch of text.</p>
-			</td>
-		</tr></table>		
+	<div class = "candidate-collection">
+		<div class = "candidate" ng-repeat="viewpoint in issue.viewpoints">
+			<table><tr>
+				<td class = "portrait-rail">
+					<div class = "portrait" ng-style="getImage(viewpoint.name)"></div>
+					<div class = "candidate-name">{{viewpoint.name}}</div>
+				</td>
+				<td class = "content">
+					<div class = "header">
+						<div class="highlighted" ng-class="viewpoint.coloring">{{viewpoint.position}}</div>
+					</div>
+					<div class = "text" ng-bind-html="renderHTML(viewpoint.elaboration)"></div>
+					<div class = "quote">{{viewpoint.quote.text}} <small>{{viewpoint.quote.dateline}}</small></div>
+				</td>
+			</tr></table>		
+		</div>
 	</div>
 </div>
 
