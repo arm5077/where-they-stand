@@ -103,6 +103,7 @@ body {
 		width: 100px;
 		height: 100px;
 		background-size: cover;
+		background-repeat: no-repeat;
 		border-radius: 50%;
 		border: 10px solid rgba(157,191,185,1);
 		background-position-x: 63%;
@@ -116,9 +117,17 @@ body {
 		font-size:13pt;
 	}
 	
-		.content .text{
-			margin: 25px 0;
+		.content .header {
+			margin-bottom: 25px;
 		}
+		
+		.content .text{
+			margin: 0px 0 25px;
+		}
+		
+			.content .text p:first-child{
+				margin-top:0px;
+			}
 		
 		.content .quote {
 			font-weight:600;
@@ -136,6 +145,7 @@ body {
 			float:left;
 			margin-top:-7px;
 			margin-right:5px;
+			height:10px;
 			
 		}
 		
@@ -153,7 +163,7 @@ body {
 	}
 	
 		.candidate:nth-child(2n) .portrait {
-			border: 10px solid rgba(0,71,59,.5)
+			border: 10px solid rgb(90, 136, 128)
 		}
 		
 		.candidate:nth-child(2n) .content .quote {

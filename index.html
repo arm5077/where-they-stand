@@ -33,7 +33,7 @@
 					<div class = "candidate-name">{{viewpoint.name}}</div>
 				</td>
 				<td class = "content">
-					<div class = "header">
+					<div class = "header" ng-show="viewpoint.position">
 						<div class="highlighted" ng-class="viewpoint.coloring">{{viewpoint.position}}</div>
 					</div>
 					<div class = "text" ng-bind-html="renderHTML(viewpoint.elaboration)"></div>

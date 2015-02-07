@@ -6,8 +6,11 @@ app.controller("opinionController", ["$scope", "$sce", function($scope, $sce){
 	$scope.renderHTML = function(text){ return $sce.trustAsHtml(text); };
 	
 	$scope.getImage = function(name){
-		
-		return {"background-image": "url('" + data.opinionators.map(function(datum){ if ( datum.name == name ) return datum.img })[0] + "')"};
+		for( i=0; i< data.opinionators.length; i++){
+			if( data.opinionators[i].name == name)
+				return {"background-image": "url('" + data.opinionators[i].img + "')"};
+		}
+
 	};
 	
 }]);
