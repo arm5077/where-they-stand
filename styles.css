@@ -56,6 +56,10 @@ body {
 		padding-left:30px;
 	}
 
+		.prompt .text p:first-child {
+			margin-top:0px;
+		}
+	
 .candidate {
 	width:80%;
 	margin: auto;
@@ -98,7 +102,15 @@ body {
 		text-align: right;
 		text-transform: uppercase;
 	}
-	
+		
+		.candidate-name.mobile {
+			text-align: left;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #333;
+			margin-bottom: 10px;
+			display: none;
+		}
+		
 	.portrait {
 		width: 100px;
 		height: 100px;
@@ -143,6 +155,7 @@ body {
 			
 			.neutral {
 				border:1px solid rgba(255,255,255,.8);
+				color:black;
 			}
 			
 			.content .text p:first-child{
@@ -190,3 +203,16 @@ body {
 			background-color: rgba(0,71,59,.5);
 
 		}
+		
+	
+	
+@media screen and (max-width: 700px) {
+
+	.candidate-name.mobile {
+		display: block;
+	}
+	
+	.portrait-rail {
+		display:none;
+	}
+}

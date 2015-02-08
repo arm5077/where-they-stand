@@ -4,301 +4,337 @@ data = {
             "name": "Jeb Bush",
             "title": "Presidential candidate",
             "img": "img/bush.png",
-			"x": "63%",
-			"y": "0"
+            "x": "63%",
+            "y": "5px"
         },
-		{
+        {
             "name": "Ted Cruz",
             "title": "Presidential candidate",
-            "img": "img/cruz.png"
+            "img": "img/cruz.png",
+            "x": "0",
+            "y": "6px"
         },
-		{
+        {
             "name": "John Boehner",
             "title": "",
-            "img": "img/boehner.png"
+            "img": "img/boehner.png",
+            "x": "-2px",
+            "y": "10px"
         },
-		{
+        {
             "name": "Ben Carson",
             "title": "",
-            "img": "img/carson.png"
+            "img": "img/carson.png",
+            "x": "28px",
+            "y": "8px"
         },
-		{
+        {
             "name": "Chris Christie",
             "title": "",
-            "img": "img/christie.png"
+            "img": "img/christie.png",
+            "x": "-18px",
+            "y": "5px"
         },
-		{
+        {
             "name": "Ted Cruz",
             "title": "",
             "img": "img/cruz.png"
         },
-		{
+        {
             "name": "Carly Fiorina",
             "title": "",
-            "img": "img/fiorina.png"
+            "img": "img/fiorina.png",
+            "x": "8px",
+            "y": "3px"
         },
-		{
+        {
             "name": "Lindsey Graham",
             "title": "",
-            "img": "img/graham.png"
+            "img": "img/graham.png",
+            "x": "-11px",
+            "y": "3px"
         },
-		{
+        {
             "name": "Mike Huckabee",
             "title": "",
-            "img": "img/huckabee.png"
+            "img": "img/huckabee.png",
+            "x": "66%",
+            "y": "6px"
         },
-		{
+        {
             "name": "Jim Inhofe",
             "title": "",
-            "img": "img/inhofe.png"
+            "img": "img/inhofe.png",
+            "x": "-7px",
+            "y": "8px"
         },
-		{
+        {
             "name": "Bobby Jindal",
             "title": "",
-            "img": "img/jindal.png"
+            "img": "img/jindal.png",
+            "x": "-6px",
+            "y": "8px"
         },
-		{
+        {
             "name": "John Kasich",
             "title": "",
-            "img": "img/kasich.png"
+            "img": "img/kasich.png",
+            "x": "0",
+            "y": "5px"
         },
-		{
+        {
             "name": "Mitch McConnell",
             "title": "",
-            "img": "img/mcconnell.png"
+            "img": "img/mcconnell.png",
+            "x": "-13px",
+            "y": "10px"
         },
-		{
+        {
             "name": "Sarah Palin",
             "title": "",
-            "img": "img/palin.png"
+            "img": "img/palin.png",
+            "x": "-22px",
+            "y": "4px"
         },
-		{
+        {
             "name": "Rand Paul",
             "title": "",
-            "img": "img/paul.png"
+            "img": "img/paul.png",
+            "x": "10px",
+            "y": "6px"
         },
-		{
+        {
             "name": "Rick Perry",
             "title": "",
-            "img": "img/perry.png"
+            "img": "img/perry.png",
+            "x": "-12px",
+            "y": "5px"
         },
-		{
+        {
             "name": "Mitt Romney",
             "title": "",
-            "img": "img/romney.png"
+            "img": "img/romney.png",
+            "x": "0px",
+            "y": "5px"
         },
-		{
+        {
             "name": "Marco Rubio",
             "title": "",
             "img": "img/rubio.png",
-			"x": "-25%",
-			"y": "3px"
+            "x": "-25%",
+            "y": "3px"
         },
-		{
+        {
             "name": "Rick Santorum",
             "title": "",
-            "img": "img/santorum.png"
+            "img": "img/santorum.png",
+            "x": "-5px",
+            "y": "9px"
         },
-		{
+        {
             "name": "Scott Walker",
             "title": "",
-            "img": "img/walker.png"
+            "img": "img/walker.png",
+            "x": "0",
+            "y": "6px"
         }
     ],
     "issues": [
         {
-            "title": "Is human activity contributing to climate change?:",
-            "text": "This is where we'll explain a bit about the issue at hand. Let's not forget that the \"issue\" can be a sub-issue of the main page's prompt! That's allowed. <em>We just don't care.</em>",
+            "title": "",
+            "text": "",
             "viewpoints": [
                 {
                     "name": "Marco Rubio",
                     "position": "",
-					"coloring": "",
-	                    "elaboration": "<p><strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> The Florida senator has made comments and taken votes suggesting he does not believe human activity contributes to climate change.</p><p>Earlier this year, Rubio voted a &ldquo;no&rdquo; on a Senate amendment that said the climate is changing and human activity contributes. And Rubio told ABC last year: &ldquo;I do not believe that human activity is causing these dramatic changes to our climate the way these scientists are portraying it.&rdquo;</p><p>But on other recent occasions, Rubio has left the question open-ended. &ldquo;I&rsquo;ve never denied that there is a climate change...The question is: Is man-made activity causing the changes in the climate?,&rdquo; Rubio told the Miami Herald last year.</p><p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Rubio has said that U.S. action to rein in carbon emissions would not have a significant impact given that China and India are ramping up their use of fossil fuels and has criticized administration efforts to tackle rising temperatures by cutting carbon emissions.</p><p>But last year at the National Press Club, Rubio said: There are things we can do to develop alternative forms of energy, there are things we can do to become better stewards of the energy resources that we have.&rdquo;</p>",
+                    "coloring": "",
+                    "elaboration": "<p><strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> The Florida senator has made comments and taken votes suggesting he does not believe human activity contributes to climate change.</p><p>Earlier this year, Rubio voted &ldquo;no&rdquo; on an amendment that said the climate is changing and human activity contributes. And Rubio told ABC last year: &ldquo;I do not believe that human activity is causing these dramatic changes to our climate the way these scientists are portraying it.&rdquo;</p><p>But on other recent occasions, Rubio has left the question open-ended. &ldquo;I&rsquo;ve never denied that there is a climate change...The question is: Is man-made activity causing the changes in the climate?,&rdquo; Rubio told the Miami Herald last year.</p><p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Rubio has expressed skepticism that the U.S. can halt climate change and criticized administration efforts to tackle rising emissions by cutting carbon emissions.</p> <p>But last year at the National Press Club, Rubio said: &ldquo;There are things we can do to develop alternative forms of energy, there are things we can do to become better stewards of the energy resources that we have.&rdquo;</p>",
                     "quote": {
                         "text": "I don't agree with the notion that...there are actions we can take today that would actually have an impact on what's happening in our climate.",
-                        "dateline": "May 13, 2014, interview with ABC"
+                        "dateline": "May 2014, interview with ABC"
                     }
                 },
-				{
+                {
                     "name": "Ted Cruz",
                     "position": "",
-					"coloring": "opposes",
+                    "coloring": "opposes",
                     "elaboration": "<p><strong>Is human activity contributing to climate change?</strong> <span class = 'negative'>No.</span> Cruz voted &ldquo;no&rdquo; on an amendment earlier this year saying that climate change is real and human activity contributes. &ldquo;There&rsquo;s never been a day in the history of the world in which the climate is not changing,&rdquo; Cruz told CNN last year.</p> <p>But when asked if there is any man-made reason for climate change, Cruz said: &ldquo;What I think is that the data are not supporting what the advocates are arguing.&rdquo;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Cruz has criticized Obama&rsquo;s efforts to tackle global warming and slammed the administration for prioritizing action to address climate.</p> <p>&ldquo;We must be responsible stewards of the environment and ensure that we pass on a legacy of conservation to our children and grandchildren,&rdquo; Cruz told National Journal. &ldquo;But as I&rsquo;ve said before, our environmental policies should be driven by science, and not by the political agendas of those whose primary interest is to grow government power.&rdquo;</p>",
                     "quote": {
                         "text": "The federal government has no business attempting to massively reorder the global economy, resulting in policies that kill jobs and keep people from rising out of poverty, all in the name of a theory that can't be proven or disproven.",
-                        "dateline": "Interview with National Journal"
+                        "dateline": "February 2015, statement"
                     }
                 },
-				{
+                {
                     "name": "Rand Paul",
                     "position": "",
-					"coloring": "",
-	                    "elaboration": "<p><strong>Is human activity contributing to climate change?</strong> <span class = 'affirmative'>Yes.</span> Paul voted &ldquo;yes&rdquo; to an amendment saying that climate change is real and that human activity contributes earlier this year. &ldquo;There is abundant evidence that carbon is increasing and has increased since the industrial age,&rdquo; Paul told Bill Maher last year.</p><p>It is unclear, however, whether Paul believes human activity is a major driver of emissions. He voted &ldquo;no&rdquo; on a third amendment saying that climate change exists and human activity significantly contributes.</p><p><strong>Should we do something about climate changes</strong> <span class = 'affirmative'>Yes.</span> &ldquo;All I ask for is that the solution has to be a balanced solution and that you have to account for jobs and jobs lost by regulation,&rdquo; Paul told Maher. &ldquo;We&rsquo;re a growing population and as we grow we need more energy and maybe cleaner energy will supplant less clean energy over time and it already is but I don&rsquo;t think that shutting down dramatically one form of energy is a good idea for an economy.&rdquo;</p>",
+                    "coloring": "",
+                    "elaboration": "<p><strong>Is human activity contributing to climate change?</strong> <span class = 'affirmative'>Yes.</span> Paul voted &ldquo;yes&rdquo; on an amendment saying that climate change is real and that human activity contributes earlier this year. &ldquo;There is abundant evidence that carbon is increasing and has increased since the industrial age,&rdquo; Paul told Bill Maher last year.</p><p>It is unclear, however, whether the Kentucky senator believes human activity is a major driver of emissions. Paul voted &ldquo;no&rdquo; on another amendment saying human activity significantly contributes to a changing climate.</p><p><strong>Should we do something about climate change?</strong> <span class = 'affirmative'>Yes.</span> &ldquo;All I ask for is that the solution has to be a balanced solution and that you have to account for jobs and jobs lost by regulation,&rdquo; Paul told Maher. &ldquo;We&rsquo;re a growing population and as we grow we need more energy and maybe cleaner energy will supplant less clean energy over time and it already is but I don&rsquo;t think that shutting down dramatically one form of energy is a good idea for an economy.&rdquo;</p>",
                     "quote": {
                         "text": "I'm not against regulation. I think the environment has been cleaned up dramatically through regulations on emissions...but I don't want to shut down all forms of energy such that thousands and thousands of people lose jobs.",
-                        "dateline": "Nov. 15, 2014, interview with Bill Maher"
+                        "dateline": "November 2014, interview with Bill Maher"
                     }
-                }	,
-					{
-	                    "name": "Jeb Bush",
-	                    "position": "",
-						"coloring": "",
-		                    "elaboration": "<p><Strong>Is human activity contributing to climate changes</strong> <span class = 'neutral'>Unclear.</span> &quot;I think global warming may be real,&quot; Bush told Fox News in 2011, adding: &ldquo;It it is not unanimous among scientists that it is disproportionately man-made.&rdquo;</p><p>Bush told Esquire in 2009 that global warming &ldquo;may be only partially man-made.&rdquo;</p><p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;I would be very wary of hollowing out our industrial base even further...I think we need to be very cautious before we dramatically alter who we are as a nation because of it,&rdquo; Bush told Esquire.</p>",
-	                    "quote": {
-	                        "text": "I'm a skeptic. I'm not a scientist.",
-	                        "dateline": "2009, interview with Esquire"
-	                    }
-	                },
-						{
-		                    "name": "Chris Christie",
-		                    "position": "",
-							"coloring": "",
-			                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'affirmative'>Yes.</span> When asked if climate change is real and human activity plays a role during a 2013 gubernatorial debate, Christie responded emphatically: &ldquo;Yes.&rdquo;</p><p><strong>Should we do anything about climate changes</strong> <span class = 'affirmative'>Yes.</span> &ldquo;We are continuing to look for ways to lower our carbon footprint,&rdquo; Christie said in 2013 touting New Jersey&rsquo;s investment in solar power and natural gas. &ldquo;We&rsquo;ve met our goals for 2020 in carbon emissions already, we&rsquo;re proud of our record,&rdquo; Christie added.</p>",
-		                    "quote": {
-		                        "text": "I think climate change is real and I think human activity plays a role.",
-		                        "dateline": "2013, gubernatorial debate"
-		                    }
-		                }	,
-											{
-							                    "name": "Scott Walker",
-							                    "position": "",
-												"coloring": "",
-								                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> Walker has not commented on whether he believes climate change exists or human activity contributes.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Walker has promised to fight Obama&rsquo;s climate agenda, announcing in January that he plans to challenge the administration's regulations to curb carbon emissions from power plants in court. &ldquo;These proposals could have a devastating impact on Wisconsin,&rdquo; Walker said in his State of the State address.</p>",
-							                    "quote": {
-							                        "text": "Top-down regulations and mandates from the federal government get in the way of innovation and growth.",
-							                        "dateline": "January 2015, Walker's State of the State address"
-							                    }
-							                },
-														{
-										                    "name": "Mike Huckabee",
-										                    "position": "",
-															"coloring": "", 
-											                    "elaboration": "<p><Strong>Is human activity contributing to climate changes?</strong> <span class = 'neutral'>Unclear.</span> In 2013, Huckabee wrote in a Facebook post that predictions about climate change have so far turned out to be inaccurate, but said that does not prove there is no man-made impact on climate.</p><p>He raised doubts, however, saying: &ldquo;It does prove that even some of the smartest people on Earth might not know just how much they still don&rsquo;t know.&rdquo;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Huckabee slammed Obama&rsquo;s focus on climate change at the Iowa Freedom Summit this year. &quot;I wish he understood that we have a real enemy...Islamic jihadism,&rdquo; Huckabee said.</p>",
-										                    "quote": {
-										                        "text": "Mr. President, I believe that most of us would think that a beheading is a far greater threat to an American than a sunburn.",
-										                        "dateline": "January 2015, Iowa Freedom Summit"
-										                    }
-										                }	,
-																	{
-													                    "name": "Rick Santorum",
-													                    "position": "",
-																		"coloring": "",
-											                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;Is the climate warming? Clearly over the past, you know, 15 or 20 years the question is yes. The question is, is man having a significant impact on that,&rdquo; Santorum told CNN this year.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'negative'>No.</span> &ldquo;Is there anything the United States can do about it? Clearly, no.,&rdquo; Santorum told CNN this year.</p>",
-													                    "quote": {
-													                        "text": "Even folks who accept all of the science by the alarmists on the other side, recognize that everything that's being considered by the United States will have almost - well, not almost, will have zero impact on it given what's going on in the rest of the world.",
-													                        "dateline": "Jan. 25, 2015, CNN interview"
-													                    }
-													                }	,
-																	{
-													                    "name": "Rick Perry",
-													                    "position": "",
-																		"coloring": "",
-											                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;I don&rsquo;t believe that we have the settled science by any sense of the imagination,&rdquo; Perry said at a Christian Science Monitor event last year.</p><p>&ldquo;I think we&rsquo;re seeing it almost weekly or even daily, scientists who are coming forward and questioning the original idea that man-made global warming is what is causing the climate to change,&rdquo; Perry said in 2011.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;Calling CO2 a pollutant is doing a disservice [to] the country, and I believe a disservice to the world,&rdquo; Perry said last year. &ldquo;I&rsquo;m not a scientist,&rdquo; he added. But &ldquo;short term, I&rsquo;m substantially more concerned about Iran.&rdquo;</p>",
-													                    "quote": {
-													                        "text": "I do not believe we need one-size-fits-all federal mandates that harm our economy and kill jobs in order to improve the environment.",
-													                        "dateline": "Interview with National Journal"
-													                    }
-													                }	,	{
-														                    "name": "Bobby Jindal",
-														                    "position": "",
-																			"coloring": "",
-												                    		"elaboration": "<p><Strong>Is human activity contributing to climate changes</strong> <span class = 'affirmative'>Yes.</span> &ldquo;Nobody disputes that the climate is always changing,&rdquo; Jindal wrote in a policy paper last year.</p><p>&ldquo;It&rsquo;s not controversial to say human activity is contributing,&rdquo; Jindal said at a Christian Science Monitor event last year, adding that scientists should be left &ldquo;to decide how much, [and] what that means.&rdquo;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'affirmative'>Yes.</span> Jindal has said he supports a &ldquo;no-regrets&rdquo; approach to addressing climate change that would &ldquo;reduce carbon dioxide emissions without punishing the American economy.&rdquo;</p><p>&ldquo;We must also work to develop strategies to adapt to and mitigate whatever climate changes may occur,&rdquo; Jindal wrote in a policy paper last year.</p>",
-														                    "quote": {
-														                        "text": "The climate change issue is too important for the federal government to play political games.",
-														                        "dateline": "2014, policy paper"
-														                    }
-														                }	,
-																		{
-															                    "name": "Carly Fiorina",
-															                    "position": "",
-																				"coloring": "",
-													                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> Fiorina called climate change a &ldquo;big issue&rdquo; in an article she wrote for the Washington Post last year. But in a 2010 ad, Fiorina attacked Senator Barbara Boxer for calling climate change a national security threat, saying: &ldquo;Terrorism kills, and Barbara Boxer's worried about the weather.&rdquo;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> In her Washington Post article, Fiorina suggests there is little the U.S. can do to address climate change.</p><p>&ldquo;When discussing climate, scientists may agree that some policy change is warranted, but they also agree that action by a single state or nation will make little difference,&rdquo; Fiorina wrote.</p>",
-															                    "quote": {
-															                        "text": "At a time when American families are still recovering from joblessness and the recession, should the United States commit to an energy policy that puts U.S. jobs, and the economy, at risk?",
-															                        "dateline": "Oct. 24, 2014, Washington Post editorial"
-															                    }
-															                }	,
-																			{
-																                    "name": "Lindsey Graham",
-																                    "position": "",
-																					"coloring": "",
-														                    		"elaboration": "<p><Strong>Is human activity contributing to climate changes</strong> <span class = 'affirmative'>Yes.</span> &ldquo;I&rsquo;m not a scientist but I&rsquo;ve heard enough regarding those who make it their life&rsquo;s work to be convinced that man-made emissions are causing a problem of contributing to the overall warming of the planet,&rdquo; Graham said on the Senate floor this year. Graham was one of only five Republicans to vote for an amendment saying that climate change is real and human activity significantly contributes.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Graham has criticized current U.S. action to address climate, but worked with then-Senator John Kerry on a cap-and-trade bill in 2009.</p><p>&ldquo;The problem is that how you fix this globally is going to require more than just the United States to be involved. This deal with China, where they have to do nothing for 20 years, is probably not exactly where I&rsquo;d want to be,&rdquo; Graham said on the Senate floor earlier this year.</p>",
-																                    "quote": {
-																                        "text": "The bottom line is that the solutions coming from our Democratic friends about how to deal with greenhouse gas emissions turn our economy upside down.",
-																                        "dateline": "January 2015, on the Senate floor"
-																                    }
-																                }	,
-																				{
-																	                    "name": "Ben Carson",
-																	                    "position": "",
-																						"coloring": "",
-															                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &quot;There's always going to be either cooling or warming going on,&rdquo; Carson told Bloomberg last year. &quot;We may be warming. We may be cooling.&quot;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> In an op-ed in the Desert Sun last year, Carson said that Obama&rsquo;s climate rule will &ldquo;stifle abundant energy production,&rdquo; but suggests using the Environmental Protection Agency &ldquo;in conjunction with the spirit of innovation and entrepreneurship to produce and export a vast amount of clean energy.&rdquo;</p>",
-																	                    "quote": {
-																	                        "text": "To use climate change as an excuse not to develop our God-given resources makes little sense.",
-																	                        "dateline": "March 29, 2014, Desert Sun editorial"
-																	                    }
-																	                }	,
-																					{
-																		                    "name": "Sarah Palin",
-																		                    "position": "",
-																							"coloring": "",
-																                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong><span class = 'negative'>No.</span> &quot;I'm not a denier. I don't doubt that climate change exists,&quot; Palin said in a video last year. &ldquo;But no one has proven that these changes are caused by anything done by human beings via greenhouse gases,&rdquo; Palin added.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'negative'>No.</span> &ldquo;The so-called experts now tell us that even if we do...all those the things that the Obama administration tells us we must do, well, the effect on the actual temperature of the planet will be imperceptible,&rdquo; Palin said in a video last year. &ldquo;I don&rsquo;t know about you. I&rsquo;m in no mood though to cripple the American economy for imperceptible changes.&rdquo;</p>",
-																		                    "quote": {
-																		                        "text": "[Climate change is] hysteria and a lot of it is junk science.",
-																		                        "dateline": "2014, video address"
-																		                    }
-																		                }	,
-																						{
-																			                    "name": "John Kasich",
-																			                    "position": "",
-																								"coloring": "",
-																	                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;I am a believer...I happen to believe there is a problem with climate change...I respect the creation that the Lord has given us and I want to make sure we protect it,&rdquo; Kasich told the Hill in 2012.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> &quot;I believe there is something to [climate change], but to be unilaterally doing everything here while China and India are belching and putting us in a noncompetitive position isn&rsquo;t good,&rdquo; Kasich said in 2012.</p>",
-																			                    "quote": {
-																			                        "text": "I am concerned about it, but I am not laying awake at night worrying the sky is falling. I just have a concern about it.",
-																			                        "dateline": "2012, interview with The Hill"
-																			                    }
-																			                }	,
-																							{
-																				                    "name": "Mitt Romney",
-																				                    "position": "",
-																									"coloring": "",
-																		                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'affirmative'>Yes.</span> &quot;I'm one of those Republicans who thinks we are getting warmer and that we contribute to that,&quot; Romney said at an event in Utah this year.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'affirmative'>Yes.</span> Romney listed climate change as one of the major challenges that the next U.S. president will need to tackle in office during a speech in California this year.</p><p>Speaking in Utah, Romney said that &ldquo;real leadership&rdquo; is needed to rein in air pollution from coal power.</p>",
-																				                    "quote": {
-																				                        "text": "I'm one of those Republicans who thinks we are getting warmer and that we contribute to that.",
-																				                        "dateline": "January 2015, investment management conference in Utah"
-																				                    }
-																				                }	,
-																								{
-																					                    "name": "John Boehner",
-																					                    "position": "",
-																										"coloring": "",
-																			                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &quot;Clearly we have had changes in our climate,&quot; Boehner said this year, adding: &quot;I'll let scientists debate sources and their opinion of that change.&rdquo;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Boehner has criticized the administration&rsquo;s efforts to tackle climate change by regulating carbon emissions from power plants, saying they will hurt the American economy.</p>",
-																					                    "quote": {
-																					                        "text": "Every proposal we see out of the administration with regard to climate change means killing American jobs.",
-																					                        "dateline": "January 2015, interview"
-																					                    }
-																					                }	,
-																									{
-																						                    "name": "Mitch McConnell",
-																						                    "position": "",
-																											"coloring": "",
-																				                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> McConnell against an amendment this year saying that climate change is real and human activity contributes.</p><p>&ldquo;Each side has their scientists, and they can all go in and argue,&rdquo; McConnell told POLITICO last year when asked if human activity has contributed to climate change.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> McConnell slams Obama&rsquo;s efforts to reign in pollution, saying that regulations to limit emissions kill coal jobs. He has also suggested that U.S. action will achieve little.</p><p>&quot;The Indians and Chinese are building coal plants, the Europeans having started off in this direction, are now importing coal, and the Australians, just a couple months ago, repealed their carbon tax,&quot; McConnell told the Courier-Journal last year.</p>",
-																						                    "quote": {
-																						                        "text": "I'm not a scientist, I am interested in protecting Kentucky's economy, I'm interested in having low cost electricity.",
-																						                        "dateline": "October 2014, interview with the Courier-Journal"
-																						                    }
-																						                }	,
-																										{
-																							                    "name": "Jim Inhofe",
-																							                    "position": "",
-																												"coloring": "",
-																					                    		"elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'negative'>No.</span> &ldquo;The hoax is that there are some people who are so arrogant to think that they are so powerful they can change climate. Man can&rsquo;t change climate,&rdquo; Inhofe said on the Senate floor this year.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'negative'>No.</span> Inhofe has vowed to dismantle Obama&rsquo;s regulations to curb carbon emissions citing the potential cost of the rule as his primary reason for opposition. </p><p>Inhofe told National Journal that &ldquo;overbearing regulations and insurmountable costs to the U.S.&rdquo; imposed by the regulations would create &ldquo;a lot of pain for no substantial gain.&rdquo; Inhofe has also called the the U.S. climate deal with China a &ldquo;non-binding charade.&rdquo;</p>",
-																							                    "quote": {
-																							                        "text": "Look at the archeological findings. They talk about climate. From the beginning of time [climate] has changed...They talk about it and the scripture is talking about it. So this is something that everyone has agreed and no one would debate that it has always happened.",
-																							                        "dateline": "January 2015, on the Senate floor"
-																							                    }
-																							                }	,
+                },
+                {
+                    "name": "Jeb Bush",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &quot;I think global warming may be real,&quot; Bush told Fox News in 2011, adding: &ldquo;It it is not unanimous among scientists that it is disproportionately man-made.&rdquo;</p><p>Bush told Esquire in 2009 that global warming &ldquo;may be only partially man-made.&rdquo;</p><p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;I would be very wary of hollowing out our industrial base even further...I think we need to be very cautious before we dramatically alter who we are as a nation because of it,&rdquo; Bush told Esquire.</p>",
+                    "quote": {
+                        "text": "I'm a skeptic. I'm not a scientist.",
+                        "dateline": "July 2009, interview with Esquire"
+                    }
+                },
+                {
+                    "name": "Chris Christie",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'affirmative'>Yes.</span> When asked if climate change is real and human activity plays a role during a 2013 gubernatorial debate, Christie responded emphatically: &ldquo;Yes.&rdquo;</p><p><strong>Should we do anything about climate change?</strong> <span class = 'affirmative'>Yes.</span> &ldquo;We are continuing to look for ways to lower our carbon footprint,&rdquo; Christie said in 2013 touting New Jersey&rsquo;s investment in solar power and natural gas. &ldquo;We&rsquo;ve met our goals for 2020 in carbon emissions already, we&rsquo;re proud of our record,&rdquo; Christie added.</p>",
+                    "quote": {
+                        "text": "I think climate change is real and I think human activity plays a role.",
+                        "dateline": "October 2013, gubernatorial debate"
+                    }
+                },
+                {
+                    "name": "Scott Walker",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> Walker has not commented on whether he believes climate change exists or human activity contributes.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Walker has promised to fight Obama&rsquo;s climate agenda, announcing in January that he plans to challenge the administration's regulations to curb carbon emissions from power plants in court. &ldquo;These proposals could have a devastating impact on Wisconsin,&rdquo; Walker said in his State of the State address.</p>",
+                    "quote": {
+                        "text": "Top-down regulations and mandates from the federal government get in the way of innovation and growth.",
+                        "dateline": "January 2015, Walker's State of the State address"
+                    }
+                },
+                {
+                    "name": "Mike Huckabee",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> In 2013, Huckabee wrote in a Facebook post that predictions about climate change have so far turned out to be inaccurate, but said that does not prove there is no man-made impact on climate.</p><p>He raised doubts, however, saying: &ldquo;It does prove that even some of the smartest people on Earth might not know just how much they still don&rsquo;t know.&rdquo;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Huckabee slammed Obama&rsquo;s focus on climate change at the Iowa Freedom Summit this year. &quot;I wish he understood that we have a real enemy...Islamic jihadism,&rdquo; Huckabee said.</p>",
+                    "quote": {
+                        "text": "Mr. President, I believe that most of us would think that a beheading is a far greater threat to an American than a sunburn.",
+                        "dateline": "January 2015, Iowa Freedom Summit"
+                    }
+                },
+                {
+                    "name": "Rick Santorum",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;Is the climate warming? Clearly over the past, you know, 15 or 20 years...yes. The question is, is man having a significant impact on that,&rdquo; Santorum told CNN this year.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'negative'>No.</span> &ldquo;Is there anything the United States can do about it? Clearly, no.,&rdquo; Santorum told CNN this year.</p>",
+                    "quote": {
+                        "text": "Even folks who accept all of the science by the alarmists on the other side, recognize that everything that's being considered by the United States will have almost - well, not almost, will have zero impact on it given what's going on in the rest of the world.",
+                        "dateline": "January 2015, CNN interview"
+                    }
+                },
+                {
+                    "name": "Rick Perry",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;I don&rsquo;t believe that we have the settled science by any sense of the imagination,&rdquo; Perry said at a Christian Science Monitor event last year.</p><p>&ldquo;I think we&rsquo;re seeing it almost weekly or even daily, scientists who are coming forward and questioning the original idea that man-made global warming is what is causing the climate to change,&rdquo; Perry said in 2011.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;Calling CO2 a pollutant is doing a disservice [to] the country, and I believe a disservice to the world,&rdquo; Perry said last year. &ldquo;I&rsquo;m not a scientist,&rdquo; he added. But &ldquo;short term, I&rsquo;m substantially more concerned about Iran.&rdquo;</p>",
+                    "quote": {
+                        "text": "I do not believe we need one-size-fits-all federal mandates that harm our economy and kill jobs in order to improve the environment.",
+                        "dateline": "February 2015, statement"
+                    }
+                },
+                {
+                    "name": "Bobby Jindal",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'affirmative'>Yes.</span> &ldquo;Nobody disputes that the climate is always changing,&rdquo; Jindal wrote in a policy paper last year.</p><p>&ldquo;It&rsquo;s not controversial to say human activity is contributing,&rdquo; Jindal said at a Christian Science Monitor event last year, adding that scientists should be left &ldquo;to decide how much, [and] what that means.&rdquo;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'affirmative'>Yes.</span> Jindal has said he supports a &ldquo;no-regrets&rdquo; approach to addressing climate change that would &ldquo;reduce carbon dioxide emissions without punishing the American economy.&rdquo;</p><p>&ldquo;We must also work to develop strategies to adapt to and mitigate whatever climate changes may occur,&rdquo; Jindal wrote in a policy paper last year.</p>",
+                    "quote": {
+                        "text": "The climate change issue is too important for the federal government to play political games.",
+                        "dateline": "September 2014, policy paper"
+                    }
+                },
+                {
+                    "name": "Carly Fiorina",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> Fiorina called climate change a &ldquo;big issue&rdquo; in an article she wrote for the Washington Post last year. But in a 2010 ad, Fiorina attacked Senator Barbara Boxer for calling climate change a national security threat, saying: &ldquo;Terrorism kills, and Barbara Boxer's worried about the weather.&rdquo;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> In her Washington Post article, Fiorina suggests there is little the U.S. can do to address climate change.</p><p>&ldquo;When discussing climate, scientists may agree that some policy change is warranted, but they also agree that action by a single state or nation will make little difference,&rdquo; Fiorina wrote.</p>",
+                    "quote": {
+                        "text": "At a time when American families are still recovering from joblessness and the recession, should the United States commit to an energy policy that puts U.S. jobs, and the economy, at risk?",
+                        "dateline": "October 2014, Washington Post editorial"
+                    }
+                },
+                {
+                    "name": "Lindsey Graham",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'affirmative'>Yes.</span> &ldquo;I&rsquo;m not a scientist but I&rsquo;ve heard enough regarding those who make it their life&rsquo;s work to be convinced that man-made emissions are causing a problem of contributing to the overall warming of the planet,&rdquo; Graham said on the Senate floor this year. Graham was one of only five Republicans to vote for an amendment saying that climate change is real and human activity significantly contributes.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'affirmative'>Yes.</span> Graham has criticized current U.S. action to address climate, but worked with then-Senator John Kerry on a cap-and-trade bill in 2009.</p><p>&ldquo;The problem is that how you fix this globally is going to require more than just the United States to be involved. This deal with China, where they have to do nothing for 20 years, is probably not exactly where I&rsquo;d want to be,&rdquo; Graham said on the Senate floor earlier this year.</p>",
+                    "quote": {
+                        "text": "The bottom line is that the solutions coming from our Democratic friends about how to deal with greenhouse gas emissions turn our economy upside down.",
+                        "dateline": "January 2015, on the Senate floor"
+                    }
+                },
+                {
+                    "name": "Ben Carson",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &quot;There's always going to be either cooling or warming going on,&rdquo; Carson told Bloomberg last year. &quot;We may be warming. We may be cooling.&quot;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> In an op-ed in the Desert Sun last year, Carson said that Obama&rsquo;s climate rule will &ldquo;stifle abundant energy production,&rdquo; but suggests using the Environmental Protection Agency &ldquo;in conjunction with the spirit of innovation and entrepreneurship to produce and export a vast amount of clean energy.&rdquo;</p>",
+                    "quote": {
+                        "text": "To use climate change as an excuse not to develop our God-given resources makes little sense.",
+                        "dateline": "March 2014, Desert Sun editorial"
+                    }
+                },
+                {
+                    "name": "Sarah Palin",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'negative'>No.</span> &quot;I'm not a denier. I don't doubt that climate change exists,&quot; Palin said in a video last year. &ldquo;But no one has proven that these changes are caused by anything done by human beings via greenhouse gases,&rdquo; Palin added.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'negative'>No.</span> &ldquo;The so-called experts now tell us that even if we do...all those the things that the Obama administration tells us we must do, well, the effect on the actual temperature of the planet will be imperceptible,&rdquo; Palin said in a video last year. &ldquo;I don&rsquo;t know about you. I&rsquo;m in no mood though to cripple the American economy for imperceptible changes.&rdquo;</p>",
+                    "quote": {
+                        "text": "[Climate change is] hysteria and a lot of it is junk science.",
+                        "dateline": "October 2014, video address"
+                    }
+                },
+                {
+                    "name": "John Kasich",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &ldquo;I am a believer...I happen to believe there is a problem with climate change...I respect the creation that the Lord has given us and I want to make sure we protect it,&rdquo; Kasich told the Hill in 2012.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> &quot;I believe there is something to [climate change], but to be unilaterally doing everything here while China and India are belching and putting us in a noncompetitive position isn&rsquo;t good,&rdquo; Kasich said in 2012.</p>",
+                    "quote": {
+                        "text": "I am concerned about it, but I am not laying awake at night worrying the sky is falling.",
+                        "dateline": "May 2012, interview with The Hill"
+                    }
+                },
+                {
+                    "name": "Mitt Romney",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'affirmative'>Yes.</span> &quot;I'm one of those Republicans who thinks we are getting warmer and that we contribute to that,&quot; Romney said at an event in Utah this year.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'affirmative'>Yes.</span> Romney listed climate change as one of the major challenges that the next U.S. president will need to tackle in office during a speech in California this year.</p><p>Speaking in Utah, Romney said that &ldquo;real leadership&rdquo; is needed to rein in air pollution from coal power.</p>",
+                    "quote": {
+                        "text": "I'm one of those Republicans who thinks we are getting warmer and that we contribute to that.",
+                        "dateline": "January 2015, investment management conference in Utah"
+                    }
+                },
+                {
+                    "name": "John Boehner",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> &quot;Clearly we have had changes in our climate,&quot; Boehner said this year, adding: &quot;I'll let scientists debate sources and their opinion of that change.&rdquo;</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> Boehner has criticized the administration&rsquo;s efforts to tackle climate change by regulating carbon emissions from power plants, saying they will hurt the American economy.</p>",
+                    "quote": {
+                        "text": "Every proposal we see out of the administration with regard to climate change means killing American jobs.",
+                        "dateline": "January 2015, interview"
+                    }
+                },
+                {
+                    "name": "Mitch McConnell",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'neutral'>Unclear.</span> McConnell voted &ldquo;no&rdquo; on an amendment this year saying that climate change is real and human activity contributes.</p><p>&ldquo;Each side has their scientists, and they can all go in and argue,&rdquo; McConnell told POLITICO last year when asked if human activity has contributed to climate change.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'neutral'>Unclear.</span> McConnell slams Obama&rsquo;s efforts to reign in pollution, saying that regulations to limit emissions kill coal jobs. He has also suggested that U.S. action will achieve little.</p><p>&quot;The Indians and Chinese are building coal plants, the Europeans having started off in this direction, are now importing coal, and the Australians, just a couple months ago, repealed their carbon tax,&quot; McConnell told the Courier-Journal last year.</p>",
+                    "quote": {
+                        "text": "I'm not a scientist, I am interested in protecting Kentucky's economy, I'm interested in having low cost electricity.",
+                        "dateline": "October 2014, interview with the Courier-Journal"
+                    }
+                },
+                {
+                    "name": "Jim Inhofe",
+                    "position": "",
+                    "coloring": "",
+                    "elaboration": "<p><Strong>Is human activity contributing to climate change?</strong> <span class = 'negative'>No.</span> &ldquo;The hoax is that there are some people who are so arrogant to think that they are so powerful they can change climate. Man can&rsquo;t change climate,&rdquo; Inhofe said on the Senate floor this year.</p> <p><strong>Should we do anything about climate change?</strong> <span class = 'negative'>No.</span> Inhofe has vowed to dismantle Obama's regulations to curb carbon emissions, citing the potential cost of the rule as his primary reason for opposition.</p><p>Inhofe told National Journal that &ldquo;overbearing regulations and insurmountable costs to the U.S.&rdquo; imposed by the regulations would create &ldquo;a lot of pain for no substantial gain.&rdquo; Inhofe has also called the U.S. climate deal with China a &ldquo;non-binding charade.&rdquo;</p>",
+                    "quote": {
+                        "text": "Look at the archeological findings. They talk about climate. From the beginning of time [climate] has changed...They talk about it and the scripture is talking about it. So this is something that everyone has agreed and no one would debate that it has always happened.",
+                        "dateline": "January 2015, on the Senate floor"
+                    }
+                }
+                
             ]
         }
     ]
