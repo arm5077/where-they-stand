@@ -106,7 +106,6 @@ body {
 		background-repeat: no-repeat;
 		border-radius: 50%;
 		border: 10px solid rgba(157,191,185,1);
-		background-position-x: 63%;
 		display: inline-block;
 	}
 	
@@ -123,8 +122,29 @@ body {
 		
 		.content .text{
 			margin: 0px 0 25px;
+			line-height:1.4em;
 		}
 		
+			.affirmative, .neutral, .negative {
+				padding: 2px 5px;
+				color: white;
+				font-weight: bold;
+				letter-spacing: .05em;
+				border-radius: 3px;
+			}
+		
+			.affirmative {
+				background-color: #267EC1;
+			}
+			
+			.negative {
+				background-color: #952226;
+			}
+			
+			.neutral {
+				border:1px solid rgba(255,255,255,.8);
+			}
+			
 			.content .text p:first-child{
 				margin-top:0px;
 			}

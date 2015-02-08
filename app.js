@@ -8,7 +8,7 @@ app.controller("opinionController", ["$scope", "$sce", function($scope, $sce){
 	$scope.getImage = function(name){
 		for( i=0; i< data.opinionators.length; i++){
 			if( data.opinionators[i].name == name)
-				return {"background-image": "url('" + data.opinionators[i].img + "')"};
+				return {"background-image": "url('" + data.opinionators[i].img + "')", "background-position-x": data.opinionators[i].x, "background-position-y": data.opinionators[i].y};
 		}
 
 	};
