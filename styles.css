@@ -133,7 +133,7 @@ body {
 		}
 		
 		.content .text{
-			margin: 0px 0 25px;
+			margin: 0px
 			line-height:1.4em;
 		}
 		
@@ -158,11 +158,28 @@ body {
 				color:black;
 			}
 			
+			.content .text p {
+				line-height:1.4em;
+			}
+			
 			.content .text p:first-child{
 				margin-top:0px;
 			}
-		
+			
+			.content .text p:last-child{
+				margin-bottom:0px;
+			}
+			
+			.content .text ul {
+				list-style: square;
+			}
+			
+			.content .text li {
+				margin-bottom:10px;
+			}
+			
 		.content .quote {
+			margin-top:25px;
 			font-weight:600;
 			font-size: 15pt;
 			//border-top: 1px solid rgba(0,0,0,.2);
@@ -214,5 +231,19 @@ body {
 	
 	.portrait-rail {
 		display:none;
+	}
+	
+	.content .text {
+		font-size: 12pt;
+	}
+	
+		.content .text strong {
+			display:block;
+			margin-bottom:5px;
+			
+		}
+	
+	.content {
+		padding-left: 0px;
 	}
 }

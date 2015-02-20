@@ -2,7 +2,7 @@
 
 console.log("Embedded scripts running ...");
 
-var pymParent = new pym.Parent('iframe', "https://s3-us-west-2.amazonaws.com/nationaljournal/where-they-stand/climate-change/index.html", {});
+var pymParent = new pym.Parent('iframe', "https://s3-us-west-2.amazonaws.com/nationaljournal/where-they-stand/immigration/index.html", {});
 
 resize();
 $(window).resize(resize);

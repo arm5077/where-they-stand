@@ -43,7 +43,7 @@
 						<div class="highlighted" ng-class="viewpoint.coloring">{{viewpoint.position}}</div>
 					</div>
 					<div class = "text" ng-bind-html="renderHTML(viewpoint.elaboration)"></div>
-					<div class = "quote">{{viewpoint.quote.text}} <small>{{viewpoint.quote.dateline}}</small></div>
+					<div class = "quote" ng-bind-html="renderHTML(viewpoint.quote.text + '<small>' + viewpoint.quote.dateline + '</small>')" ng-show="viewpoint.quote.text"></div>
 				</td>
 			</tr></table>		
 		</div>
