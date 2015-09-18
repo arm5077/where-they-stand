@@ -1,0 +1,16 @@
+{
+  "name": "where-they-stand",
+  "version": "0.0.0",
+  "homepage": "https://github.com/arm5077/where-they-stand",
+  "authors": [
+    "Andrew McGill <arm5077@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

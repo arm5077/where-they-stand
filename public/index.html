@@ -1,0 +1,32 @@
+<html ng-app="angularApp" ng-controller="overallController">
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- Angular -->
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+
+	<!-- Site-specific styles -->
+	<link rel="stylesheet" href="styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fontello.css">
+	<link rel="stylesheet" href="fontello-codes.css">
+	<link rel="stylesheet" href="fontello-embedded.css">
+</head>
+
+<body>
+	<div class="content" ng-view="" autoscroll=""></div>
+</body>
+
+<script type="text/javascript" src="js/app.js"></script>
+<script src="js/controllers/homeController.js"></script>
+<script src="js/controllers/candidateController.js"></script>
+<script src="js/controllers/issueController.js"></script>
+<script src="js/routes.js"></script>
+
+</html>

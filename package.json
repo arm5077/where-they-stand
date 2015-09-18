@@ -1,0 +1,25 @@
+{
+  "name": "where-they-stand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arm5077/where-they-stand.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arm5077/where-they-stand/issues"
+  },
+  "homepage": "https://github.com/arm5077/where-they-stand",
+  "dependencies": {
+    "express": "^4.13.3",
+    "google-spreadsheet": "^1.0.1",
+    "mysql": "^2.9.0",
+    "thenBy.js": "git+https://git@github.com/Teun/thenBy.js.git"
+  }
+}

@@ -1,0 +1,16 @@
+<div id="menu">
+	<ul id="tab">
+		<li ng-click="selectionToggle = 'issues'"><span><p>Select an issue</p></span></li>
+		<li ng-click="selectionToggle = 'candidates'"><p>Select a candidate</p></li>
+	</ul>
+	<div style="clear:both"></div>
+	<ul id="issue_options" ng-show="selectionToggle == 'issues'">
+		<li ng-repeat="issue in issues"><a ng-href="#/issues/{{issue.title}}"><p>{{issue.title}}</p></li>
+		<div style="clear: both"></div>
+	</ul>
+
+	<ul id="candidate_options" ng-show="selectionToggle == 'candidates'" ng-click="selectionToggle = 'candidates'">
+		<li ng-repeat="candidate in candidates" ng-class="{dems: candidate.party == 'D'}"><a href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');"></div><p>{{candidate.first_name}}<br>{{candidate.last_name}}</p></div></a></li>
+	</ul>
+
+</div>

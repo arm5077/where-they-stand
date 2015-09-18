@@ -1,0 +1,35 @@
+<ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
+<div id="bottom">
+		<div class="subject_title"><p><i class="fa fa-chevron-right"></i> Where <span>{{candidate.name}}</span> stands on all the issues</p></div>
+
+		<div class="byline"><p>By Caitlin Owens</p></div>
+
+	<div id="cards">
+		<div class="card" ng-repeat="issue in candidate.issues">
+			<div class="card_title"><p>{{issue.title}}</p></div>
+
+			<div id="card_lower">
+
+				<table>
+					<tr>
+						<td ng-repeat="question in issue.questions"><h1>{{question.question}}</h1></td>
+					</tr>	
+
+					<tr>
+						<td ng-repeat="question in issue.questions"><h2>{{question.shortAnswer}}</h2></td>
+					</tr>
+			
+					<tr>
+						<td ng-repeat="question in issue.questions"><p>{{question.longAnswer}}</p></td>	
+					</tr>
+				</table>
+			
+				<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{issue.quote}}</p>
+				</div><!--quote-->
+				
+			</div><!--card lower-->
+		</div>
+	</div><!--cards-->
+
+</div> <!--bottom-->
+
