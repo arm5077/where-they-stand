@@ -4,12 +4,16 @@
 	padding-top: 10px;
 }
 
-p, h1, h2, h3, li{
+p, h1, h2, h3, h4, li{
 	font-family: Roboto;
 	font-size: 12pt;
 	font-weight: 400;
 	color: #404040;
 	margin: 0;
+}
+
+html{
+	padding: 0 0 15px 0;
 }
 
 /*///////////NEW TOP//////////*/
@@ -80,6 +84,82 @@ h4 span{
 	line-height: 20pt;
 }
 
+/*//////////HOMEPAGE ONLY////////////*/
+
+.header{
+	margin: 0;
+	padding: 0;
+	float:left;	
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	border-bottom: 1px solid #fff;
+}
+
+.header p{
+	margin: 0;
+	text-align: center;
+	line-height: 60px;
+	font-size: 22pt;
+	font-weight: 900;
+}
+
+.header span{
+	font-weight: 300;
+	font-size: 21pt
+}
+
+.header a{
+	text-decoration: none;
+}
+
+.options{
+	background-color: #e8e8e8;
+	width: 96%;
+	list-style-type: none;
+	margin: 0;
+	display: inline-block;
+	padding: 18px 2% 12px 2%;
+}
+
+.options li{
+	display: inline-block;
+	margin: 0 .4% 6px 0;
+	height: 50px;
+	float: left;
+	width: 150px;
+}
+
+#issues{
+	margin-bottom: 20px;
+}
+
+#issues li{
+	width: 200px;
+	height: 40px;
+	}
+
+#issues p{
+	float: left;
+	padding-top: 10px;
+}
+
+.options p{
+	font-weight: 300;
+	margin-left: 10px;
+	display: inline-block;
+	letter-spacing: .03em;
+	vertical-align: middle;
+}
+
+.options p:hover{
+	text-decoration: underline;
+}
+
+.options a{
+	text-decoration: none;
+}
+
 
 /*////TRAY/////////////*/
 
@@ -116,7 +196,7 @@ h4 span{
 #bottom{
 	width: 100%;
 	float: left;
-	margin: 15px 0 10px 0;
+	margin: 15px 0 0 0;
 }
 
 #cards{

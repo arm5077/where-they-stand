@@ -1,8 +1,12 @@
+<div id="navbar">
+	<img src="images/NJlogo.png"><p>The 2016 Presidential Candidates on Abortion</p><div id="button"><p><i class="fa fa-bars"></i></p></div>
+</div>
+<div id="content">
 <ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
+		<img class="darker_logo" id="long_logo" src="images/NJlogo_white.png">
+		<div id="button_body"><a href="#"><p><i class="fa fa-bars"></i></p> <span><p>See more</p></span></p></a></div>
+		<h3>Where {{candidate.name}} stands on all the issues</h3>
 <div id="bottom">
-		<div class="subject_title"><p><i class="fa fa-chevron-right"></i> Where <span>{{candidate.name}}</span> stands on all the issues</p></div>
-
-		<div class="byline"><p>By Caitlin Owens</p></div>
 
 	<div id="cards">
 		<div class="card" ng-repeat="issue in candidate.issues">
@@ -26,10 +30,13 @@
 			
 				<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{issue.quote}}</p>
 				</div><!--quote-->
+
+				<div class="byline"><p>By Caitlin Owens</p></div>
 				
 			</div><!--card lower-->
 		</div>
 	</div><!--cards-->
 
 </div> <!--bottom-->
+</div> <!--content-->
 
