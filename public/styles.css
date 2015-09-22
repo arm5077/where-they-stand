@@ -1,6 +1,144 @@
 
 
+/*/////DROPDOWN MENUS/////*/
+#menudrop{
+	width: 100%;
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+	position: fixed;
+	left: 0;
+	top: 51;
+	border-bottom: 1px solid #4f4f4f;
+	-webkit-box-shadow: -1px 2px 23px 1px rgba(107,105,107,0.75);
+	-moz-box-shadow: -1px 2px 23px 1px rgba(107,105,107,0.75);
+	box-shadow: -1px 2px 23px 1px rgba(107,105,107,0.75);
+}
 
+.headerdrop{
+	margin: 0;
+	padding: 0;
+	float:left;	
+	width: 100%;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.headerdrop p{
+	margin: 6px 0 9px 0;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #404040;
+	font-size: 12pt;
+}
+
+.headerdrop a{
+	text-decoration: none;
+}
+
+.optionsdrop{
+	background-color: #e6e6e6;
+	width: 96%;
+	margin: 0;
+	display: inline-block;
+	padding: 5px 2% 5px 2%;  
+}
+
+.optionsdrop p{
+	display: inline-block;
+	letter-spacing: .03em;
+}
+
+.optionsdrop a{
+	text-decoration: none;
+}
+
+#issuesdrop{
+	padding: 6px 0 0 0; 
+	display: inline-block;
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+}
+
+#issuesdrop p{
+	float: left;
+	margin: 0 10px 0 0;
+	line-height: 30px;
+	vertical-align: top;
+	padding: 0 6px 0 6px;
+	font-weight: 300;
+	font-size: 11pt;
+	border-radius: 8px;
+	transition: all 0.2s ease 0s;
+}
+
+#issuesdrop li{
+	height: 30px;
+	margin: 0 4px 6px 0;
+	float: left;
+	display: inline-block;
+	}
+
+#issuesdrop p:hover{
+	background-color:#d5d5d5;
+}
+
+#canddrop{
+	padding: 12px 0 0 6px;  
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+}
+
+#canddrop li{
+	display: inline-block;
+	margin: 0 .4% 10px 0;
+	height: 50px;
+	float: left;
+	width: 150px;
+}
+
+#canddrop p{
+	margin: 2px 0 0 10px;
+	font-weight: 300;
+	font-size: 11pt;
+}
+
+.candidate_zone{
+	height: 50px;
+	float: left;
+	margin: 0 15px 5px 0;
+	width: 140px;
+}
+
+.candidate_zone:hover{
+	background-color: #d5d5d5;
+	transition: all 0.2s ease 0s;
+	border-radius: 8px;
+}
+
+.candidate_zone p{
+	float: left;
+	padding-top: 5px;
+}
+
+.candidate_zone:hover p{
+	/*text-decoration: underline;*/
+}
+
+.portrait{
+	float: left;
+	height: 50px;
+	width: 50px;
+	background-image: url("images/clinton.png");
+	background-size: cover;
+	background-color: rgba(233, 69, 60, .9);
+	border-right: 2px solid #e8e8e8;
+}
+
+.dems .portrait{
+	background-color: #77b5e3;
+}
 
 #content{
 	width: 90%;
