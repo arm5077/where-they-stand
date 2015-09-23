@@ -1,9 +1,25 @@
+.mobile {
+	display: none
+}
+
+.desktop {
+	display: block;
+}
+
 .blue {
 	background-color: #77b5e3;
 }
 
 .red {
 	background-color: rgba(233, 69, 60, .9);
+}
+
+.blueForeground {
+	color: #77b5e3;
+}
+
+.redForeground {
+	color: rgba(233, 69, 60, .9);
 }
 
 /*/////DROPDOWN MENUS/////*/
@@ -506,4 +522,49 @@ td:nth-child(3){
 	font-size: 12pt;
 	color: #999;
 	margin-top: 20px;
+}
+
+/* // Mobile */
+@media screen and (max-width: 700px) {
+	.desktop {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+	
+	.questions {
+		margin-bottom: 25px;
+	}
+	
+	.question:nth-child(1){
+		margin-top: 0;
+	}
+
+	.question p{
+		font-weight: 900;
+		margin: 0 0 10px 0;
+	}
+
+	.short_answer p{
+		font-weight: 300;
+		font-size: 11pt;
+		text-transform: uppercase;
+
+		padding: .2em .4em .2em .35em;
+		color: #e8e8e8;
+		display: inline-block;
+		margin: 0 0 10px 0;
+	}
+
+	.long_answer p{
+		margin: 0;
+		font-size: 11pt;
+		padding: 0;
+	}
+
+	.question, .short_answer, .long_answer{
+		vertical-align: top;
+	}
 }
