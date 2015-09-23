@@ -22,10 +22,6 @@
 	color: rgba(233, 69, 60, .9);
 }
 
-.kicker {
-	margin-top: 15px;
-}
-
 /*/////DROPDOWN MENUS/////*/
 #menudrop{
 	margin-top:35px;
@@ -303,6 +299,10 @@ body {
 	position: relative;
 	top: -5px;
 	left: 5px;
+}
+
+.kicker {
+	margin-top: 15px;
 }
 
 h3{
@@ -587,11 +587,13 @@ td:nth-child(3){
 	margin-top: 20px;
 }
 
-.byline p{
+.date p{
 	font-size: 12pt;
 	color: #999;
 	margin-top: 20px;
 }
+
+.q{}
 
 /* // Mobile */
 @media screen and (max-width: 700px) {
