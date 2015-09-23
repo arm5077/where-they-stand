@@ -1,9 +1,29 @@
+.mobile {
+	display: none
+}
+
+.desktop {
+	display: block;
+}
+
 .blue {
 	background-color: #77b5e3;
 }
 
 .red {
 	background-color: rgba(233, 69, 60, .9);
+}
+
+.blueForeground {
+	color: #77b5e3;
+}
+
+.redForeground {
+	color: rgba(233, 69, 60, .9);
+}
+
+.kicker {
+	margin-top: 15px;
 }
 
 /*/////DROPDOWN MENUS/////*/
@@ -163,7 +183,10 @@ p, h1, h2, h3, h4, li{
 }
 
 html{
-	padding: 15px 0 15px 0;
+}
+
+body {
+	margin: 0;
 }
 
 /*////////HEADER/////////*/
@@ -481,6 +504,11 @@ h4 span{
 	border-bottom: 4px solid #fff;
 }
 
+	.card_title a {
+		color: inherit;
+		text-decoration: none;
+	}
+
 .card_title img{
 	width: 50px;
 	display: inline-block;
@@ -563,4 +591,88 @@ td:nth-child(3){
 	font-size: 12pt;
 	color: #999;
 	margin-top: 20px;
+}
+
+/* // Mobile */
+@media screen and (max-width: 700px) {
+
+	#card_lower{
+		width: 88%;
+		padding: 6%;
+	}
+
+	#menudrop{
+		position: relative;
+		margin-top: 0;
+
+		display: block;
+		margin: auto;
+		margin-bottom: 20px;
+		top: 0px;
+		border-bottom: 1px solid #4f4f4f;
+		-webkit-box-shadow: -1px 2px 23px 1px rgba(107,105,107,0.75);
+		-moz-box-shadow: -1px 2px 23px 1px rgba(107,105,107,0.75);
+		box-shadow: -1px 2px 23px 1px rgba(107,105,107,0.75);
+		transition: .25s all;
+		display: none;
+	}
+		#menudrop.show { 
+			top: 0px;
+			display: block;
+		}
+
+	#navbar {
+		display: none;
+	}
+		
+	h3 {
+		font-size: 25pt;
+	}
+	
+	#chatter p {
+		font-size: 13pt;
+		line-height: 19pt;
+	}
+	
+	.desktop {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+	
+	.questions {
+		margin-bottom: 25px;
+	}
+	
+	.question:nth-child(1){
+		margin-top: 0;
+	}
+
+	.question p{
+		font-weight: 900;
+		margin: 0 0 10px 0;
+	}
+
+	.short_answer p{
+		font-weight: 300;
+		font-size: 11pt;
+		text-transform: uppercase;
+
+		padding: .2em .4em .2em .35em;
+		color: #e8e8e8;
+		display: inline-block;
+		margin: 0 0 10px 0;
+	}
+
+	.long_answer p{
+		margin: 0;
+		font-size: 11pt;
+		padding: 0;
+	}
+
+	.question, .short_answer, .long_answer{
+		vertical-align: top;
+	}
 }

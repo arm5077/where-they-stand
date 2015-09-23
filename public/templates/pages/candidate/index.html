@@ -7,34 +7,25 @@
 	
 	<div id="bottom">
 		<div id="cards">
+
 			<div class="card" ng-repeat="issue in candidate.issues">
-				<div class="card_title" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}"><p>{{issue.title}} <span>// By {{issue.author}}</span></p></div>
+				<div class="card_title" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}"><p><a href="#/issues/{{item.title}}">{{issue.title}}</a> <span>// By {{issue.author}}</span></p></div>
 
 				<div id="card_lower">
 
-					<table>
-						<tr>
-							<td ng-repeat="question in issue.questions"><h1 ng-if="question.longAnswer">{{question.question}}</h1></td>
-						</tr>	
-
-						<tr>
-							<td ng-repeat="question in issue.questions"><h2 ng-if="question.shortAnswer" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}">{{question.shortAnswer}}</h2></td>
-						</tr>
-			
-						<tr>
-							<td ng-repeat="question in issue.questions"><p ng-bind-html="renderHTML(question.longAnswer)"></p></td>	
-						</tr>
-					</table>
-			
-					<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{issue.quote}}</p>
+					<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
+					
+					<div class="quote"><p class="demo-icon" ng-class="{blueForeground: candidate.party == 'D', redForeground: candidate.party == 'R'}">&#xe800;</p><p>{{item.quote}}</p>
 					</div><!--quote-->
 
 					<div class="byline"><p>Last updated: 00/00/00</p></div>
+
 				
 				</div><!--card lower-->
 			</div>
 		</div><!--cards-->
 
 	</div> <!--bottom-->
+	<ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
 </div> <!--content-->
 
