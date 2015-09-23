@@ -1,4 +1,5 @@
-<div id="menudrop">
+
+<div id="menudrop" ng-class = "{show: $parent.showNav == true}">
 	<div class= "optionsdrop">
 		<div class="headerdrop"><a href="#"><p>issues</p></a></div>
 		<ul id="issuesdrop">
@@ -8,7 +9,7 @@
 	<div class="optionsdrop">
 		<div class="headerdrop"><a href="#"><p>candidates</p></a></div>
 		<ul id="canddrop">
-			<li ng-repeat="candidate in candidates"><a ng-href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" ng-style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');"></div><p>{{candidate.first_name}}<br />{{candidate.last_name}}</p></div></a></li>
+			<li ng-repeat="candidate in candidates" ng-class="{inactive: candidate.active == 'n'}"><a ng-href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');" ng-class="{blue: candidate.party == 'D', red: candidate.party=='R'}"></div><p>{{candidate.first_name}}<br />{{candidate.last_name}}</p></div></a></li>
 		</ul>
 	</div>
 </div>

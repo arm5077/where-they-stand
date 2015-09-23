@@ -4,14 +4,11 @@ var GoogleSpreadsheet = require('google-spreadsheet');
 var mysql = require("mysql");
 var firstBy = require('thenBy.js');
 
-<<<<<<< HEAD
-=======
-//test commentssssssssss
 
->>>>>>> libbys-branch
 // Open mysql pool of connections
 var pool = mysql.createPool(process.env.CLEARDB_DATABASE_URL || "mysql://root@localhost/where_they_stand");
 pool.on("error", function(err){  
+	console.log(err);
 	pool.end;
 	return setTimeout(function(){ return connectMySQL() },3000);
 });
@@ -30,6 +27,7 @@ app.get("/", function(request, response){
 app.use("/app", express.static(__dirname + "/public/"));
 
 app.get("/api/candidates", function(request, response){	
+	console.log("checking candidates " + new Date());
 	pool.getConnection(function(err, connection){
 		if(err) throw err;
 		connection.query('SELECT * FROM candidates', function(err, rows){
@@ -69,29 +67,33 @@ app.get("/api/issues", function(request, response){
 });
 
 app.get("/api/candidates/:candidate", function(request, response){
+	console.log("pulling " + request.params.candidate + " " + new Date());
 	pool.getConnection(function(err, connection){
 		if(err) throw err;
-		
+		console.log("got connection");
 		request.params.candidate = request.params.candidate.replace("%20", " ");
 		connection.query('SELECT * FROM positions JOIN issues ON issues.issue_id = positions.issue_id JOIN quotes ON quotes.issue_id = positions.issue_id AND quotes.candidate = positions.candidate JOIN candidates ON candidates.name = positions.candidate WHERE positions.candidate = ?', 
 		[request.params.candidate], function(err, rows){
 			if(err) throw err;
+			console.log(rows.length);
 			if(rows.length > 0){
 				candidate = {name: request.params.candidate, party: rows[0].party, issues: []};
 
 				rows.forEach(function(row){
 					// Has this isue been pushed to the array yet?
 					if( candidate.issues.map(function(d){ return d.title }).indexOf(row.title) == -1 )
-						candidate.issues.push({title: row.title, quote: row.quote, questions: []})
+						candidate.issues.push({title: row.title, author: row.author, quote: row.quote, questions: []})
 
 					var index = candidate.issues.map(function(d){ return d.title }).indexOf(row.title);
 
-					candidate.issues[index].questions.push({ question: row.question, shortAnswer: row.short_answer, longAnswer: row.long_answer  });
+					candidate.issues[index].questions.push({ question: row.question, shortAnswer: row.short_answer, longAnswer: row.long_answer.replace(/(\n)+/g, '<br /><br />')  });
 				});
-
+				
+				connection.release();
 				response.status(200).json(candidate);
 			}
 			else {
+				connection.release();
 				response.status(200).json({});
 			}
 			
@@ -105,7 +107,7 @@ app.get("/api/issues/:issue", function(request, response){
 		connection.query('SELECT * FROM positions JOIN issues ON issues.issue_id = positions.issue_id JOIN quotes ON quotes.issue_id = positions.issue_id AND quotes.candidate = positions.candidate JOIN candidates ON candidates.name = positions.candidate WHERE issues.title = ?', 
 		[request.params.issue], function(err, rows){
 			if(err) throw err;
-			issue = {title: request.params.issue, intro: rows[0].intro, candidates: []};
+			issue = {title: request.params.issue, intro: rows[0].intro, author: rows[0].author, candidates: []};
 			
 			rows.forEach(function(row){
 				// Has this isue been pushed to the array yet?
@@ -113,10 +115,20 @@ app.get("/api/issues/:issue", function(request, response){
 					issue.candidates.push({name: row.candidate, party: row.party, quote: row.quote, questions: []})
 
 				var index = issue.candidates.map(function(d){ return d.name }).indexOf(row.candidate);
+				
 
-				issue.candidates[index].questions.push({ question: row.question, shortAnswer: row.short_answer, longAnswer: row.long_answer  });
+				issue.candidates[index].questions.push({ question: row.question, shortAnswer: row.short_answer, longAnswer: row.long_answer.replace(/(\n)+/g, '<br /><br />') });
 			});
 			
+			// Sort candidates alphabetically
+			issue.candidates.sort(function(a,b){
+				if(a.name.substr(a.name.indexOf(" ") + 1, 100) > b.name.substr(b.name.indexOf(" ") + 1, 100))
+					return 1;
+				else
+					return -1;
+			});
+			
+			connection.release();
 			response.status(200).json(issue);
 		});
 	});
@@ -162,7 +174,7 @@ app.get("/api/scrape", function(request, response){
 						worksheet.getRows(function(err, rows){
 							if( err ) throw err;
 							rows.forEach(function(row){
-								connection.query('INSERT INTO candidates (name, first_name, last_name, party) VALUES (?, ?, ?, ?)', [row.name, row.firstname, row.lastname, row.party], error);
+								connection.query('INSERT INTO candidates (name, first_name, last_name, party, active) VALUES (?, ?, ?, ?, ?)', [row.name, row.firstname, row.lastname, row.party, row.active], error);
 							});
 						});
 					}
@@ -174,7 +186,7 @@ app.get("/api/scrape", function(request, response){
 						
 							// Add issue and get issue_id
 							questions = getQuestions(rows[0], questions);
-							connection.query('INSERT INTO issues (title, intro) VALUES (?, ?)', [rows[0].titlefirstlineonly, rows[0].introfirstlineonly], error);
+							connection.query('INSERT INTO issues (title, intro, author) VALUES (?, ?, ?)', [rows[0].titlefirstlineonly, rows[0].introfirstlineonly, rows[0].byfirstlineonly], error);
 							connection.query('SELECT issue_id FROM issues WHERE title = ?', [rows[0].titlefirstlineonly], function(err, issues){
 								if(err) throw err;
 								else issue_id = issues[0].issue_id;
