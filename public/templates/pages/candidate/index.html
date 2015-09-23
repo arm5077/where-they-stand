@@ -8,7 +8,7 @@
 	<div id="bottom">
 		<div id="cards">
 			<div class="card" ng-repeat="issue in candidate.issues">
-				<div class="card_title" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}"><p>{{issue.title}} <span>// By Caitlin Owens</span></p></div>
+				<div class="card_title" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}"><p>{{issue.title}} <span>// By {{issue.author}}</span></p></div>
 
 				<div id="card_lower">
 
@@ -29,7 +29,7 @@
 					<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{issue.quote}}</p>
 					</div><!--quote-->
 
-					<div class="byline"><p>Last updated: 00/00/00 {{issue.author}}</p></div>
+					<div class="byline"><p>Last updated: 00/00/00</p></div>
 				
 				</div><!--card lower-->
 			</div>
