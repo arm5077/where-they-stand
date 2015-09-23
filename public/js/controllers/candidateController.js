@@ -9,6 +9,7 @@ angular.module("angularApp")
 		$scope.candidate = data;
 
 		$scope.title = "Where " + $scope.candidate.name + " stands on all the issues";
+		$scope.$parent.pageTitle = $scope.candidate.name;
 	});
 	
 	
