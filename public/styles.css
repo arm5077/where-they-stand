@@ -500,6 +500,7 @@ h4 span{
 .card_title p span{
 	font-weight: 300;
 	font-size: 14pt;
+	opacity: .8;
 }
 
 #card_lower{
