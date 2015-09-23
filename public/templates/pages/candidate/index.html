@@ -8,8 +8,8 @@
 	<div id="bottom">
 		<div id="cards">
 
-			<div class="card" ng-repeat="issue in candidate.issues">
-				<div class="card_title" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}"><p><a href="#/issues/{{item.title}}">{{issue.title}}</a> <span>// By {{issue.author}}</span></p></div>
+			<div class="card" ng-repeat="item in candidate.issues">
+				<div class="card_title" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}"><p><a href="#/issues/{{item.title}}">{{item.title}}</a> <span>// By {{item.author}}</span></p></div>
 
 				<div id="card_lower">
 
