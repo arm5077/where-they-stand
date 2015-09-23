@@ -10,7 +10,8 @@ angular.module("angularApp")
 		
 		// Set title
 		$scope.title = "The 2016 Candidates on " + $scope.issue.title;
-
+		$scope.$parent.pageTitle = $scope.issue.title;
+		
 	});
 
 }]);

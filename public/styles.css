@@ -1,5 +1,5 @@
 .mobile {
-	display: none
+	display: none !important
 }
 
 .desktop {
@@ -475,7 +475,7 @@ h4 span{
 	padding-top: 5px;
 }
 
-.inactive .portrait {
+.inactive {
 		opacity: .5;
 	}
 
@@ -629,7 +629,16 @@ td:nth-child(3){
 		margin: 2px 0 0 10px;
 		font-weight: 300;
 		font-size: 11pt;
+		color: inherit;
 	}
+	
+		#canddrop li.mobile a {
+			color: inherit;
+		}
+		
+		#canddrop li.mobile:hover {
+			text-decoration: underline;
+		}
 		
 	#canddrop li.desktop {
 		display: none;

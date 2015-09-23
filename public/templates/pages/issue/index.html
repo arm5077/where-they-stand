@@ -4,7 +4,7 @@
 	<ng-include src="'/app/templates/snippets/kicker.html'"></ng-include>
 	<h3>Where the candidates stand on {{issue.title}}</h3>
 	<div id="name_date"><h4><span><i class="fa fa-chevron-right"></i></span> By {{issue.author}}</h4>
-	<p>Last updated: 00/00/00</p></div>
+	<!--<p>Last updated: {{moment(issue.updated).format("M/D/YYYY")}}</p>--></div>
 
 		<div id="chatter"><p>Here is intro chatter about abortion. Setting up the rest of the article, blah blah blah. tktktk taslkdjfa;lsk a;lksjd fal;skj dflaskj dfalskdjf ;alskdjf ;asldkfj ;sldkfj as;ldkfja s;dlfkjas ;dlfkajs dflaksjd f;alskdfj a;sldkfj as;ldfkja sd;flkasjd flskjdf ;aslkdfj a;sldkfj s;ldfkj as.</p></div>
 
@@ -18,6 +18,8 @@
 			
 				<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{item.quote}}</p>
 				</div><!--quote-->
+				
+				<div class="date"><p>Last updated: {{moment(item.updated).format("M/D/YYYY")}}</p></div>
 				
 			</div><!--card lower-->
 		</div>

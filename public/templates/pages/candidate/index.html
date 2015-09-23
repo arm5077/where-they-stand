@@ -18,7 +18,7 @@
 					<div class="quote"><p class="demo-icon" ng-class="{blueForeground: candidate.party == 'D', redForeground: candidate.party == 'R'}">&#xe800;</p><p>{{item.quote}} <div class="q">"</div></p>
 					</div><!--quote-->
 
-					<div class="date"><p>Last updated: 00/00/00</p></div>
+					<div class="date"><p>Last updated: {{moment(item.updated).format("M/D/YYYY")}}</p></div>
 
 				
 				</div><!--card lower-->

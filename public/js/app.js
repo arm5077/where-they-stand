@@ -3,6 +3,7 @@ angular.module("angularApp", ['ngRoute', 'pc035860.scrollWatch'])
 		
 	$scope.renderHTML = function(text){ return $sce.trustAsHtml(text); };	
 	$scope.pageTitle = "National Journal";
+	$scope.moment = moment;
 	
 	// Get candidates
 	$http.get("/api/candidates").success(function(data){

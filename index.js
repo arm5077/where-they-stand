@@ -82,7 +82,7 @@ app.get("/api/candidates/:candidate", function(request, response){
 				rows.forEach(function(row){
 					// Has this isue been pushed to the array yet?
 					if( candidate.issues.map(function(d){ return d.title }).indexOf(row.title) == -1 )
-						candidate.issues.push({title: row.title, author: row.author, quote: row.quote, questions: []})
+						candidate.issues.push({title: row.title, author: row.author, quote: row.quote, updated: row.date_updated, questions: []})
 
 					var index = candidate.issues.map(function(d){ return d.title }).indexOf(row.title);
 
@@ -112,7 +112,7 @@ app.get("/api/issues/:issue", function(request, response){
 			rows.forEach(function(row){
 				// Has this isue been pushed to the array yet?
 				if( issue.candidates.map(function(d){ return d.name }).indexOf(row.candidate) == -1 )
-					issue.candidates.push({name: row.candidate, party: row.party, quote: row.quote, questions: []})
+					issue.candidates.push({name: row.candidate, party: row.party, quote: row.quote, updated: row.date_updated, questions: []})
 
 				var index = issue.candidates.map(function(d){ return d.name }).indexOf(row.candidate);
 				
@@ -197,7 +197,9 @@ app.get("/api/scrape", function(request, response){
 									if( index != 0 ){
 										// Cycle through questions...
 										questions.forEach(function(question, i){
-											connection.query('INSERT INTO positions (issue_id, candidate, question, short_answer, long_answer) VALUES (?, ?, ?, ?, ?)', [issue_id, row.candidate, question, row['shortanswer' + (i+1)], row['longanswer' + (i+1)] ], error);
+
+											var exportDate = new Date(row['updated']).getFullYear() + "-" + (new Date(row['updated']).getMonth() + 1) + "-" + new Date(row['updated']).getDate();
+											connection.query('INSERT INTO positions (issue_id, candidate, question, short_answer, long_answer, date_updated) VALUES (?, ?, ?, ?, ?, ?)', [issue_id, row.candidate, question, row['shortanswer' + (i+1)], row['longanswer' + (i+1)], exportDate], error);
 										});
 									
 										// Add the quote
