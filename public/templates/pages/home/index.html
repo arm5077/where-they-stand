@@ -15,14 +15,14 @@
 				<a href="#"><p><span>Get started by</span> selecting an issue</p></a>
 			</div>
 			<ul class="options" id="issues">
-				<li ng-repeat="issue in issues"><a href="#/issues/{{issue.title}}"><p>{{issue.title}}</p></a></li>
+				<li ng-repeat="issue in $parent.issues"><a href="#/issues/{{issue.title}}"><p>{{issue.title}}</p></a></li>
 			</ul>
 
 			<ul class="header">
 				<a href="#"><p><span>or by</span> selecting a candidate</p></a>
 			</ul>
 			<ul class="options">
-				<li ng-repeat="candidate in candidates"><a href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}" ></div><p>{{candidate.first_name}}<br>{{candidate.last_name}}</p></div></a></li>
+				<li ng-repeat="candidate in $parent.candidates"><a href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}" ></div><p>{{candidate.first_name}}<br>{{candidate.last_name}}</p></div></a></li>
 			</ul>
 
 	
