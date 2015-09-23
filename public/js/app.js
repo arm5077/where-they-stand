@@ -1,6 +1,9 @@
 angular.module("angularApp", ['ngRoute', 'pc035860.scrollWatch'])
 .controller("overallController", ["$scope", "$http", "$sce", function($scope, $http, $sce){
 		
+	$scope.renderHTML = function(text){ return $sce.trustAsHtml(text); };	
+	$scope.pageTitle = "National Journal";
+	
 	// Get candidates
 	$http.get("/api/candidates").success(function(data){
 		$scope.candidates = data;

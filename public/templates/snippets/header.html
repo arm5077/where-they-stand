@@ -1,4 +1,4 @@
-<div id="navbar" scroll-watch="{from: 0, to: 1000}" sw-class="{ hide: $positive < 50, display: $positive >= 50 }">
+<div id="navbar" scroll-watch="{from: 0, to: 1000}" sw-class="{ hide: $positive < 50, display: $positive >= 50 }" ng-class="{stillDisplay: $parent.showNav == true}">
 	<a href="http://www.nationaljournal.com"><img src="images/NJlogo.png"></a>
 	<p>{{title}}</p>
 	<div id="button" ng-click="$parent.showNav = !$parent.showNav">
