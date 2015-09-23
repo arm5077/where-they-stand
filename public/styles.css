@@ -487,13 +487,11 @@ h4 span{
 
 #bottom{
 	width: 100%;
-	float: left;
 	margin: 15px 0 0 0;
 }
 
 #cards{
 	width: 100%;
-	float: left;
 	margin: 0px 0 10px 0;
 }
 
@@ -624,6 +622,16 @@ td:nth-child(3){
 		}
 
 	#navbar {
+		display: none;
+	}
+	
+	#canddrop li.mobile {
+		margin: 2px 0 0 10px;
+		font-weight: 300;
+		font-size: 11pt;
+	}
+		
+	#canddrop li.desktop {
 		display: none;
 	}
 		
