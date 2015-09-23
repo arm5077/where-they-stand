@@ -8,7 +8,7 @@
 	<div id="bottom">
 		<div id="cards">
 			<div class="card" ng-repeat="item in candidate.issues">
-				<div class="card_title" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}"><p>{{item.title}}</p></div>
+				<div class="card_title" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}"><p><a href="#/issues/{{item.title}}">{{item.title}}</a></p></div>
 
 				<div id="card_lower">
 
@@ -24,5 +24,6 @@
 		</div><!--cards-->
 
 	</div> <!--bottom-->
+	<ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
 </div> <!--content-->
 

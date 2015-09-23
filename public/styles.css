@@ -22,6 +22,10 @@
 	color: rgba(233, 69, 60, .9);
 }
 
+.kicker {
+	margin-top: 15px;
+}
+
 /*/////DROPDOWN MENUS/////*/
 #menudrop{
 	margin-top:35px;
@@ -184,7 +188,10 @@ p, h1, h2, h3, h4, li{
 }
 
 html{
-	padding: 15px 0 15px 0;
+}
+
+body {
+	margin: 0;
 }
 
 /*////////HEADER/////////*/
@@ -445,6 +452,11 @@ h4 span{
 	display: inline-block;
 	border-bottom: 4px solid #fff;
 }
+
+	.card_title a {
+		color: inherit;
+		text-decoration: none;
+	}
 
 .card_title img{
 	width: 50px;

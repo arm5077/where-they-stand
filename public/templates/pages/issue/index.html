@@ -10,7 +10,7 @@
 <div id="bottom">
 	<div id="cards">
 		<div class="card" ng-repeat="item in issue.candidates">
-			<div class="card_title" ng-class="{blue: item.party == 'D', red: item.party=='R'}"><img ng-src="images/{{item.name.substr(item.name.indexOf(' ')+1,100)}}.png"><p>{{item.name}}</p></div>
+			<div class="card_title" ng-class="{blue: item.party == 'D', red: item.party=='R'}"><a ng-href="#/candidates/{{item.name}}"><img ng-src="images/{{item.name.substr(item.name.indexOf(' ')+1,100)}}.png"><p>{{item.name}}</p></a></div>
 			<div id="card_lower">
 
 				<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
@@ -24,6 +24,8 @@
 		</div><!--cards-->
 
 </div> <!--bottom-->
+
+	<ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
 
 </div> <!--content-->
 
