@@ -70,7 +70,6 @@
 	padding: 6px 0 0 0; 
 	display: inline-block;
 	margin: 0;
-	display: inline-block;
 	width: 100%;
 }
 
@@ -134,10 +133,6 @@
 .candidate_zone p{
 	float: left;
 	padding-top: 5px;
-}
-
-.candidate_zone:hover p{
-	/*text-decoration: underline;*/
 }
 
 .portrait{
@@ -208,25 +203,32 @@ html{
 	text-align: center;
 }
 
-#navbar img{
-	width: 29px;
+#home_button{
 	display: inline-block;
-	margin: 11px 0 0 11px;
+	vertical-align: top;
+	margin: 10px 0 0 11px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	cursor: pointer;
 }
 
-#button{
-	width: 34px;
+#home_button p{
+	font-size: 22pt;
+}
+
+#menu_button{
 	display: inline-block;
 	vertical-align: top;
-	float: right;
-	margin-right: 10px;
+	margin: 12px 11px 0 0;
 	position: absolute;
 	top: 0;
 	right: 0;
 	cursor: pointer;
+}
+
+#menu_button p{
+	font-size: 18pt;
 }
 
 #button p{
@@ -366,13 +368,26 @@ h4 span{
 }
 
 #issues li{
-	width: 200px;
-	height: 40px;
+	height: 30px;
+	margin: 0 4px 6px 0;
+	float: left;
+	display: inline-block;
 	}
 
 #issues p{
 	float: left;
-	padding-top: 10px;
+	margin: 0 10px 0 0;
+	line-height: 30px;
+	vertical-align: top;
+	padding: 0 6px 0 6px;
+	font-weight: 300;
+	font-size: 11pt;
+	border-radius: 8px;
+	transition: all 0.2s ease 0s;
+}
+
+#issues p:hover{
+	background-color:#d5d5d5;
 }
 
 .options p{
@@ -385,6 +400,31 @@ h4 span{
 
 .options a{
 	text-decoration: none;
+}
+
+#cand{
+	padding: 22px 2% 12px 2%;
+}
+
+#cand li{
+	margin: 0 .4% 10px 0;
+	display: inline-block;
+	height: 50px;
+	float: left;
+	width: 150px;
+}
+
+#cand p{
+	margin: 2px 0 0 10px;
+	font-weight: 300;
+	font-size: 11pt;
+}
+
+.candidate_zone{
+	height: 50px;
+	float: left;
+	margin: 0 15px 5px 0;
+	width: 140px;
 }
 
 
