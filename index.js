@@ -4,14 +4,11 @@ var GoogleSpreadsheet = require('google-spreadsheet');
 var mysql = require("mysql");
 var firstBy = require('thenBy.js');
 
-<<<<<<< HEAD
-=======
-//test commentssssssssss
 
->>>>>>> libbys-branch
 // Open mysql pool of connections
 var pool = mysql.createPool(process.env.CLEARDB_DATABASE_URL || "mysql://root@localhost/where_they_stand");
 pool.on("error", function(err){  
+	console.log(err);
 	pool.end;
 	return setTimeout(function(){ return connectMySQL() },3000);
 });
@@ -30,6 +27,7 @@ app.get("/", function(request, response){
 app.use("/app", express.static(__dirname + "/public/"));
 
 app.get("/api/candidates", function(request, response){	
+	console.log("checking candidates " + new Date());
 	pool.getConnection(function(err, connection){
 		if(err) throw err;
 		connection.query('SELECT * FROM candidates', function(err, rows){
@@ -69,13 +67,15 @@ app.get("/api/issues", function(request, response){
 });
 
 app.get("/api/candidates/:candidate", function(request, response){
+	console.log("pulling " + request.params.candidate + " " + new Date());
 	pool.getConnection(function(err, connection){
 		if(err) throw err;
-		
+		console.log("got connection");
 		request.params.candidate = request.params.candidate.replace("%20", " ");
 		connection.query('SELECT * FROM positions JOIN issues ON issues.issue_id = positions.issue_id JOIN quotes ON quotes.issue_id = positions.issue_id AND quotes.candidate = positions.candidate JOIN candidates ON candidates.name = positions.candidate WHERE positions.candidate = ?', 
 		[request.params.candidate], function(err, rows){
 			if(err) throw err;
+			console.log(rows.length);
 			if(rows.length > 0){
 				candidate = {name: request.params.candidate, party: rows[0].party, issues: []};
 

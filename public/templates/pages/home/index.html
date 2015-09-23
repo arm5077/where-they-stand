@@ -11,43 +11,14 @@
 				<a href="#"><p><span>Get started by</span> selecting an issue</p></a>
 			</div>
 			<ul class="options" id="issues">
-				<li><a href="#"><p>Immigration</p></a></li>
-				<li><a href="#"><p>Health care</p></a></li>
-				<li><a href="#"><p>Iran deal</p></a></li>
-				<li><a href="#"><p>Climate change</p></a></li>
-				<li><a href="#"><p>Same-sex marriage</p></a></li>
-				<li><a href="#"><p>ISIS</p></a></li>
-				<li><a href="#"><p>Common Core</p></a></li>
-				<li><a href="#"><p>NSA spying</p></a></li>
-				<li><a href="#"><p>Cybersecurity</p></a></li>
-				<li><a href="#"><p>Something else</p></a></li>
+				<li ng-repeat="issue in issues"><a href="#/issues/{{issue.title}}"><p>{{issue.title}}</p></a></li>
 			</ul>
 
 			<ul class="header">
 				<a href="#"><p><span>or by</span> selecting a candidate</p></a>
 			</ul>
 			<ul class="options">
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Jeb<br>Bush</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Ben<br>Carson</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Chris<br>Christie</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Ted<br>Cruz</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Carly<br>Fiorina</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Lindsey<br>Graham</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Mike<br>Huckabee</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Bobby<br>Jindal</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>John<br>Kasich</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>George<br>Pataki</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Rand<br>Paul</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Rick<br>Perry</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Marco<br>Rubio</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Rick<br>Santorum</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Donald<br>Trump</p></div></a></li>
-				<li><a href="#"><div class="candidate_zone"><div class="portrait"></div><p>Scott<br>Walker</p></div></a></li>
-				<li><a href="#"><div class="dems candidate_zone"><div class="portrait"></div><p>Hillary<br>Clinton</p></div></a></li>
-				<li><a href="#"><div class="dems candidate_zone"><div class="portrait"></div><p>Bernie<br>Sanders</p></div></a></li>
-				<li><a href="#"><div class="dems candidate_zone"><div class="portrait"></div><p>Martin<br>O'Malley</p></div></a></li>
-				<li><a href="#"><div class="dems candidate_zone"><div class="portrait"></div><p>Jim<br>Webb</p></div></a></li>
-				<li><a href="#"><div class="dems candidate_zone"><div class="portrait"></div><p>Lincoln<br>Chafee</p></div></a></li>
+				<li ng-repeat="candidate in candidates"><a href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');"></div><p>{{candidate.first_name}}<br>{{candidate.last_name}}</p></div></a></li>
 			</ul>
 
 	

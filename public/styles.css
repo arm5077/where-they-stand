@@ -1,21 +1,26 @@
-<<<<<<< HEAD
-
-
 /*/////DROPDOWN MENUS/////*/
 #menudrop{
+	margin-top:35px;
 	width: 100%;
 	display: inline-block;
 	margin: auto;
 	vertical-align: top;
 	position: fixed;
 	left: 0;
-	top: 51;
+	top: 51px;
 	border-bottom: 1px solid #4f4f4f;
 	-webkit-box-shadow: -1px 2px 23px 1px rgba(107,105,107,0.75);
 	-moz-box-shadow: -1px 2px 23px 1px rgba(107,105,107,0.75);
 	box-shadow: -1px 2px 23px 1px rgba(107,105,107,0.75);
+	transition: .25s all;
+	top: -1000px;
+	z-index: 1;
 }
-
+	#menudrop.show { 
+		top: 51px;
+	}
+	
+	
 .headerdrop{
 	margin: 0;
 	padding: 0;
@@ -141,8 +146,6 @@
 	background-color: #77b5e3;
 }
 
-=======
->>>>>>> libbys-branch
 #content{
 	width: 90%;
 	margin: auto;
@@ -171,11 +174,21 @@ html{
 	position: fixed;
 	top: 0;
 	left: 0;
-	border-bottom: 4px solid #fff;
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(85,85,85,.65);
 	-moz-box-shadow: 0px 3px 5px 0px rgba(85,85,85,.65);
 	box-shadow: 0px 3px 5px 0px rgba(85,85,85,.65);
+	transition: .25s all;
+	top: -60px;
+	z-index: 2;
 }
+
+	#navbar.display {
+		top: 0%;
+	}
+
+	#navbar.hide {
+		top: -60px;
+	}
 
 #navbar p{
 	font-weight: 300;
@@ -491,118 +504,4 @@ td:nth-child(3){
 	font-size: 12pt;
 	color: #999;
 	margin-top: 20px;
-}
-
-/*///think we can delete these once nav is updated///*///
-#menu{
-	width: 100%;
-	display: inline-block;
-	padding: 0;
-	margin-top: 25px;
-	padding-bottom: 40px;
-}
-
-#tab{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#tab li{
-	background-color: #404040;
-	float:left;	
-	width: 49.98%;
-	height: 60px;
-	margin: 0;
-	border-bottom: 1px solid #fff;
-}
-
-#tab li:hover {
-		text-decoration: underline;
-		cursor: pointer;
-}
-
-#tab p{
-	margin: 0;
-	font-weight: 900;
-	text-align: center;
-	line-height: 60px;
-	font-size: 18pt;
-	font-weight: 900;
-	letter-spacing: .02em;
-}
-
-#tab a{
-	text-decoration: none;
-}
-
-#tab span p{
-	color: #e8e8e8;
-	font-weight: 700;
-}
-
-#tab li:nth-child(2){
-	background-color: #e8e8e8;
-	float: right;
-}
-
-#issue_options{
-	list-style-type: none;
-	background-color: #404040;
-	width: 99%;
-	padding: 6px .5% 6px .5%;
-	margin: 0;
-	}
-
-#issue_options li{
-	display: inline-block;
-	margin: 0;
-	height: 40px;
-	float: left;
-	width: 210px;
-}
-
-#issue_options p{
-	font-weight: 300;
-	line-height: 40px;
-	margin-left: 10px;
-	color: #e8e8e8;
-	letter-spacing: .03em;
-}
-
-#issue_options a{
-	text-decoration: none;
-}
-
-#issue_options p:hover{
-	text-decoration: underline;
-}
-
-#candidate_options{
-	background-color: #e8e8e8;
-	width: 96%;
-	list-style-type: none;
-	margin: 0;
-	display: inline-block;
-	padding: 18px 2% 12px 2%;
-}
-
-#candidate_options li{
-	display: inline-block;
-	margin: 0 .4% 6px 0;
-	height: 50px;
-	float: left;
-	width: 150px;
-}
-
-#candidate_options p{
-	font-weight: 300;
-	/*bline-height: 50px;*/
-	margin-left: 10px;
-	display: inline-block;
-	letter-spacing: .03em;
-}
-
-#candidate_options a{
-	text-decoration: none;
 }
