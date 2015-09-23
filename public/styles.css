@@ -146,7 +146,6 @@
 	width: 50px;
 	background-image: url("images/clinton.png");
 	background-size: cover;
-	background-color: rgba(233, 69, 60, .9);
 	border-right: 2px solid #e8e8e8;
 }
 
@@ -408,14 +407,6 @@ h4 span{
 .candidate_zone p{
 	float: left;
 	padding-top: 5px;
-}
-
-.portrait{
-	float: left;
-	height: 50px;
-	width: 50px;
-	background-size: cover;
-	background-color: rgba(233, 69, 60, .9);
 }
 
 	.inactive .portrait {
