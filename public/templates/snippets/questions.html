@@ -4,7 +4,7 @@
 	</tr>	
 
 	<tr>
-		<td ng-repeat="question in item.questions"><h2 ng-if="question.shortAnswer" ng-class="{blue: item.party == 'D', red: item.party == 'R'}">{{question.shortAnswer}}</h2></td>
+		<td ng-repeat="question in item.questions"><h2 ng-if="question.shortAnswer" ng-class="{blue: candidate.party == 'D' || item.party == 'D', red: candidate.party == 'R' || item.party == 'R'}">{{question.shortAnswer}}</h2></td>
 	</tr>
 
 	<tr>
