@@ -1,5 +1,5 @@
 .mobile {
-	display: none !important
+	display: none;
 }
 
 .desktop {
@@ -126,6 +126,10 @@
 	float: left;
 	width: 150px;
 }
+
+	#canddrop li.mobile {
+		display: none;
+	}
 
 #canddrop p{
 	margin: 2px 0 0 10px;
@@ -594,6 +598,10 @@ td:nth-child(3){
 
 /* // Mobile */
 @media screen and (max-width: 700px) {
+
+	#canddrop li.mobile {
+		display: inline-block;
+	}
 
 	#card_lower{
 		width: 88%;
