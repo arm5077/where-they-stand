@@ -383,10 +383,6 @@ h4 span{
 	vertical-align: middle;
 }
 
-.options p:hover{
-	text-decoration: underline;
-}
-
 .options a{
 	text-decoration: none;
 }
@@ -400,22 +396,17 @@ h4 span{
 	margin: 0 1.3% 5px 0;
 }
 
-.candidate_zone:hover p{
-	text-decoration: underline;
-}
-
 .candidate_zone p{
 	float: left;
 	padding-top: 5px;
 }
 
-	.inactive .portrait {
+.inactive .portrait {
 		opacity: .5;
 	}
 
 .dems .portrait{
 	background-color: #287ec1;
-	background-color: #77b5e3;
 }
 
 /*//////////BOTTOM////////////*/
