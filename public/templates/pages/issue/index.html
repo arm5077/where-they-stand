@@ -1,37 +1,22 @@
-<div id="navbar">
-	<img src="images/NJlogo.png"><p>The 2016 Presidential Candidates on Abortion</p><div id="button"><a href="#"><p><i class="fa fa-bars"></i></p></a></div>
-</div>
-<div id="content">
+<ng-include src="'/app/templates/snippets/header.html'"></ng-include>
 <ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
-		
-		<img class="darker_logo" id="long_logo" src="images/NJlogo_white.png">
-		<div id="button_body"><a href="#"><p><i class="fa fa-bars"></i></p> <span><p>See more</p></span></p></a></div>
-		<h3>Where the candidates stand on {{issue.title}}</h3>
-		<h4><span><i class="fa fa-chevron-right"></i></span> By Caitlin Owens</h4>
+<div id="content">
+	<ng-include src="'/app/templates/snippets/kicker.html'"></ng-include>
+	<h3>Where the candidates stand on {{issue.title}}</h3>
+	<div id="name_date"><h4><span><i class="fa fa-chevron-right"></i></span> By {{issue.author}}</h4>
+	<p>Last updated: 00/00/00</p></div>
 
 		<div id="chatter"><p>Here is intro chatter about abortion. Setting up the rest of the article, blah blah blah. tktktk taslkdjfa;lsk a;lksjd fal;skj dflaskj dfalskdjf ;alskdjf ;asldkfj ;sldkfj as;ldkfja s;dlfkjas ;dlfkajs dflaksjd f;alskdfj a;sldkfj as;ldfkja sd;flkasjd flskjdf ;aslkdfj a;sldkfj s;ldfkj as.</p></div>
 
 <div id="bottom">
 	<div id="cards">
-		<div class="card" ng-repeat="candidate in issue.candidates">
-			<div class="card_title"><img ng-src="images/{{candidate.name.substr(candidate.name.indexOf(' ')+1,100)}}.png"><p>{{candidate.name}}</p></div>
+		<div class="card" ng-repeat="item in issue.candidates">
+			<div class="card_title" ng-class="{blue: item.party == 'D', red: item.party=='R'}"><a ng-href="#/candidates/{{item.name}}"><img ng-src="images/{{item.name.substr(item.name.indexOf(' ')+1,100)}}.png"><p>{{item.name}}</p></a></div>
 			<div id="card_lower">
 
-				<table>
-					<tr>
-						<td ng-repeat="question in candidate.questions"><h1>{{question.question}}</h1></td>
-					</tr>	
-
-					<tr>
-						<td ng-repeat="question in candidate.questions"><h2>{{question.shortAnswer}}</h2></td>
-					</tr>
+				<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
 			
-					<tr>
-						<td ng-repeat="question in candidate.questions"><p>{{question.longAnswer}}</p></td>	
-					</tr>
-				</table>
-			
-				<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{candidate.quote}}</p>
+				<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{item.quote}}</p>
 				</div><!--quote-->
 				
 			</div><!--card lower-->
@@ -40,6 +25,8 @@
 		</div><!--cards-->
 
 </div> <!--bottom-->
+
+	<ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
 
 </div> <!--content-->
 

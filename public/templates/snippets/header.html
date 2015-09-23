@@ -1,0 +1,16 @@
+<div id="navbar" scroll-watch="{from: 0, to: 1000}" sw-class="{ hide: $positive < 50, display: $positive >= 50 }" ng-class="{stillDisplay: $parent.showNav == true}">
+	<div id="home_button">
+		<a href="#/">
+			<p>
+				<i class="fa fa-home"></i>
+			</p>
+		</a>
+	</div>
+	<p>{{title}}</p>
+	<div id="menu_button" ng-click="$parent.showNav = !$parent.showNav">
+		<p>
+			<i class="fa fa-bars"></i>
+		</p>
+	</div>
+</div>
+

@@ -1,44 +1,31 @@
-<div id="navbar">
-	<img src="images/NJlogo.png"><p>The 2016 Presidential Candidates on Abortion</p><div id="button"><a href="#"><p><i class="fa fa-bars"></i></p></a></div>
-</div>
-<div id="content">
+<ng-include src="'/app/templates/snippets/header.html'"></ng-include>
 <ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
-		<img class="darker_logo" id="long_logo" src="images/NJlogo_white.png">
-		<div id="button_body"><a href="#"><p><i class="fa fa-bars"></i></p> <span><p>See more</p></span></p></a></div>
-		<h3>Where {{candidate.name}} stands on all the issues</h3>
+<div id="content">
+	<ng-include src="'/app/templates/snippets/kicker.html'"></ng-include>
+	<h3>Where {{candidate.name}} stands on all the issues</h3>
+	<div id="chatter"><p><i>National Journal</i> has rounded up {{candidate.name}}'s positions on today's most important political issues. We plan to update this platform as the season rolls along, so stay tuned for posts on additional topics, and updates as candidates change or clarify their stances.</p></div>
+	
+	<div id="bottom">
+		<div id="cards">
 
-		<div id="chatter"><p><i>National Journal</i> has rounded up {{candidate.name}}'s positions on today's most important political issues. We plan to update this platform as the season rolls along, so stay tuned for posts on additional topics, and updates as candidates change or clarify their stances.</p></div>
-<div id="bottom">
+			<div class="card" ng-repeat="issue in candidate.issues">
+				<div class="card_title" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}"><p><a href="#/issues/{{item.title}}">{{issue.title}}</a> <span>// By {{issue.author}}</span></p></div>
 
-	<div id="cards">
-		<div class="card" ng-repeat="issue in candidate.issues">
-			<div class="card_title"><p>{{issue.title}}</p></div>
+				<div id="card_lower">
 
-			<div id="card_lower">
+					<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
+					
+					<div class="quote"><p class="demo-icon" ng-class="{blueForeground: candidate.party == 'D', redForeground: candidate.party == 'R'}">&#xe800;</p><p>{{item.quote}}</p>
+					</div><!--quote-->
 
-				<table>
-					<tr>
-						<td ng-repeat="question in issue.questions"><h1>{{question.question}}</h1></td>
-					</tr>	
+					<div class="byline"><p>Last updated: 00/00/00</p></div>
 
-					<tr>
-						<td ng-repeat="question in issue.questions"><h2>{{question.shortAnswer}}</h2></td>
-					</tr>
-			
-					<tr>
-						<td ng-repeat="question in issue.questions"><p>{{question.longAnswer}}</p></td>	
-					</tr>
-				</table>
-			
-				<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{issue.quote}}</p>
-				</div><!--quote-->
-
-				<div class="byline"><p>By Caitlin Owens</p></div>
 				
-			</div><!--card lower-->
-		</div>
-	</div><!--cards-->
+				</div><!--card lower-->
+			</div>
+		</div><!--cards-->
 
-</div> <!--bottom-->
+	</div> <!--bottom-->
+	<ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
 </div> <!--content-->
 
