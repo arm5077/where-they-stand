@@ -22,6 +22,6 @@
 	</div>
 
 	<div class="long_answer">
-		<p>{{question.longAnswer}}</p>
+		<p ng-bind-html="renderHTML(question.longAnswer)"></p>
 	</div>
 </div>

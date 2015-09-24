@@ -8,7 +8,7 @@
 
 <h3>TwentySixteen Presidential Candidates:<br />Where They Stand</h3>
 
-<div id="chatter"><p><i>National Journal</i> has rounded up the core positions of the presidential contenders on some of today's most important political issues. We plan to update this platform as the season rolls along, so stay tuned for posts on additional topics, and updates as candidates change or clarify their stances.</p></div>
+<div id="chatter"><p><i>National Journal</i> has rounded up the positions of the 2016 presidential contenders on some of today's most important political issues. We'll update as the season rolls along, so stay tuned for new posts and updates as candidates change or clarify their stances.</p></div>
 
 <div id="menu">
 			<div class="header">
@@ -22,7 +22,7 @@
 				<a href="#"><p><span>or by</span> selecting a candidate</p></a>
 			</ul>
 			<ul class="options" id="cand">
-				<li ng-repeat="candidate in $parent.candidates"><a href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}" ></div><p>{{candidate.first_name}}<br>{{candidate.last_name}}</p></div></a></li>
+				<li ng-class="{inactive: candidate.active == 'n'}" ng-repeat="candidate in $parent.candidates"><a href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}" ></div><p>{{candidate.first_name}}<br>{{candidate.last_name}}</p></div></a></li>
 			</ul>
 
 	
