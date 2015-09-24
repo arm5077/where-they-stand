@@ -16,7 +16,7 @@
 
 				<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
 
-				<div class="quote"><p class="demo-icon" ng-class="{blueForeground: item.party == 'D', redForeground: item.party == 'R'}">&#xe800;</p><p ng-bind-html="renderHTML(item.quote)" ></p>
+				<div class="quote"><div class="quote_text"><div class="demo-icon" ng-class="{blueForeground: item.party == 'D', redForeground: item.party == 'R'}">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>
 
 				</div><!--quote-->
 				
@@ -33,3 +33,6 @@
 
 </div> <!--content-->
 
+<!--<div class="quote"><p class="demo-icon" ng-class="{blueForeground: item.party == 'D', redForeground: item.party == 'R'}">&#xe800;</p><div class="quote_text"><p ng-bind-html="renderHTML(item.quote)" ></p></div>-->
+
+<!--<div class="quote"><div class="demo-icon" ng-class="{blueForeground: item.party == 'D', redForeground: item.party == 'R'}">&#xe800;</div><div class="quote_text"><p ng-bind-html="renderHTML(item.quote)" ></p></div>-->
