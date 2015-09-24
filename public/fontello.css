@@ -27,14 +27,12 @@
   font-style: normal;
   font-weight: normal;
   speak: none;
+  font-size: 13pt;
   float: left;
-  font-size: 11pt;
-
- 
   display: inline-block;
+ 
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
  
@@ -48,7 +46,8 @@
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   /*margin-left: .2em;*/
-  margin-right: 1%;
+  margin-right: 14px;
+  margin-top: 3px;
  
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -118,3 +117,10 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 .icon-quote:before { content: '\e800'; } /* '' */
+
+
+/* // Mobile */
+@media screen and (max-width: 850px) {
+  .demo-icon{
+    font-size: 10pt;
+  }
