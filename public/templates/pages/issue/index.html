@@ -16,7 +16,7 @@
 
 				<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
 			
-				<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{item.quote}}</p>
+				<div class="quote"><p class="demo-icon">&#xe800;</p><p ng-bind-html="renderHTML(item.quote)"></p>
 				</div><!--quote-->
 				
 				<div class="date"><p>Last updated: {{moment(item.updated).format("M/D/YYYY")}}</p></div>
