@@ -24,11 +24,13 @@
 
 /*/////DROPDOWN MENUS/////*/
 #menudrop{
-	margin-top:35px;
+	margin-top: -1px;
+	padding-top: 1px;
 	width: 100%;
 	display: inline-block;
-	margin: auto;
+	/*margin: auto;*/
 	vertical-align: top;
+	background-color: #e6e6e6;
 	position: fixed;
 	left: 0;
 	top: 51px;
@@ -353,6 +355,7 @@ h4 span{
 	line-height: 20pt;
 }
 
+
 /*//////////HOMEPAGE ONLY////////////*/
 
 .header{
@@ -452,7 +455,7 @@ h4 span{
 }
 
 #cand p{
-	margin: 2px 0 0 10px;
+	margin: 2px 0 0 0;
 	font-weight: 300;
 	font-size: 11pt;
 }
@@ -595,15 +598,26 @@ td:nth-child(3){
 	font-family: 'Roboto Slab';
 	color: #585858;
 	font-weight: 400;
-
 }
+
+/*#container{
+	display: inline-block;
+	float: left;
+	width: 100%;
+}
+
+.context p{
+	font-size: 12pt;
+	color: #999;
+	margin-top: 20px;
+	float: left;
+}*/
 
 .date p{
 	font-size: 12pt;
 	color: #999;
 	margin-top: 20px;
 	float: left;
-	width: 100%;
 }
 
 .q{
