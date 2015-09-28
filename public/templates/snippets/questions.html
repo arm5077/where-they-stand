@@ -1,6 +1,6 @@
 <table class = "desktop">
 	<tr>
-		<td ng-repeat="question in item.questions"><h1 ng-if="question.longAnswer">{{question.question}}</h1></td>
+		<td ng-repeat="question in item.questions"><h1 ng-if="question.longAnswer || question.shortAnswer">{{question.question}}</h1></td>
 	</tr>	
 
 	<tr>
