@@ -399,7 +399,6 @@ h4 span{
 	margin: 0 .4% 6px 0;
 	height: 50px;
 	float: left;
-	width: 150px;
 }
 
 #issues{
@@ -411,6 +410,7 @@ h4 span{
 	margin: 0 4px 6px 0;
 	float: left;
 	display: inline-block;
+	
 	}
 
 #issues p{
