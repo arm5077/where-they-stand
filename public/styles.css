@@ -521,9 +521,8 @@ h4 span{
 	font-weight: 700;
 	font-family: 'Roboto Slab';
 	color: #fff;
-	letter-spacing: .02em;
-	line-height: 52px;
-	margin-left: 1%;
+	line-height: 51px;
+	margin-left: 12px;
 	display: inline-block;
 	vertical-align: top;
 	font-size: 15pt;
@@ -729,6 +728,14 @@ td:nth-child(3){
 		display: block;
 	}
 	
+	.card_title p{
+	font-size: 13pt;
+	}
+
+	.card_title p span{
+	font-size: 12pt;
+	}
+
 	.questions {
 		margin-bottom: 25px;
 	}
