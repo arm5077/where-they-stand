@@ -709,14 +709,33 @@ td:nth-child(3){
 	#canddrop li.desktop {
 		display: none;
 	}
-		
+
+	.kicker{
+		position: fixed;
+		background-color: #fff;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 12px 0 0 12px;
+		width: 100%;
+		height: 50px;
+		margin: 0;
+	}
+
+	#long_logo{
+	margin: 0 10px 0 0; 
+ 	}
+
 	h3 {
 		font-size: 25pt;
+		display: inline-block;
+		margin: 50px 15px 15px 15px;
 	}
 	
 	#chatter p {
 		font-size: 13pt;
 		line-height: 19pt;
+		margin: 0 15px 0 15px;
 	}
 
 	
