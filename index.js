@@ -77,7 +77,7 @@ app.get("/api/candidates/:candidate", function(request, response){
 			if(err) throw err;
 			console.log(rows.length);
 			if(rows.length > 0){
-				candidate = {name: request.params.candidate, party: rows[0].party, issues: []};
+				candidate = {name: request.params.candidate, party: rows[0].party, active: rows[0].active, issues: []};
 
 				rows.forEach(function(row){
 					// Has this isue been pushed to the array yet?
@@ -112,7 +112,7 @@ app.get("/api/issues/:issue", function(request, response){
 			rows.forEach(function(row){
 				// Has this isue been pushed to the array yet?
 				if( issue.candidates.map(function(d){ return d.name }).indexOf(row.candidate) == -1 )
-					issue.candidates.push({name: row.candidate, party: row.party, quote: row.quote, updated: row.date_updated, questions: []})
+					issue.candidates.push({name: row.candidate, party: row.party, quote: row.quote, updated: row.date_updated, active: row.active, questions: []})
 
 				var index = issue.candidates.map(function(d){ return d.name }).indexOf(row.candidate);
 				
