@@ -82,7 +82,7 @@ app.get("/api/candidates/:candidate", function(request, response){
 				rows.forEach(function(row){
 					// Has this isue been pushed to the array yet?
 					if( candidate.issues.map(function(d){ return d.title }).indexOf(row.title) == -1 )
-						candidate.issues.push({title: row.title, author: row.author, quote: row.quote, updated: row.date_updated, questions: []})
+						candidate.issues.push({title: row.title, author: row.author, quote: row.quote, context: row.context, updated: row.date_updated, questions: []})
 
 					var index = candidate.issues.map(function(d){ return d.title }).indexOf(row.title);
 
@@ -112,7 +112,7 @@ app.get("/api/issues/:issue", function(request, response){
 			rows.forEach(function(row){
 				// Has this isue been pushed to the array yet?
 				if( issue.candidates.map(function(d){ return d.name }).indexOf(row.candidate) == -1 )
-					issue.candidates.push({name: row.candidate, party: row.party, quote: row.quote, updated: row.date_updated, active: row.active, questions: []})
+					issue.candidates.push({name: row.candidate, party: row.party, quote: row.quote, context: row.context, updated: row.date_updated, active: row.active, questions: []})
 
 				var index = issue.candidates.map(function(d){ return d.name }).indexOf(row.candidate);
 				
