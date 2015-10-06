@@ -1,9 +1,14 @@
 <ng-include src="'/app/templates/snippets/header.html'"></ng-include>
 <ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
 <div id="content">
-	<ng-include src="'/app/templates/snippets/kicker.html'"></ng-include>
+	
+	<div class="kicker"><ng-include src="'/app/templates/snippets/kicker.html'"></ng-include></div>
 	<h3>Where {{candidate.name}} stands on all the issues</h3>
-	<div id="chatter"><p><i>National Journal</i> has rounded up {{candidate.name}}'s positions on today's most important political issues. We plan to update this platform as the season rolls along, so stay tuned for posts on additional topics, and updates as candidates change or clarify their stances.</p></div>
+
+	<!--<div class="big_photo" ng-repeat="item in issues.candidates"><img ng-src="images/{{item.name.substr(item.name.indexOf(' ')+1,100)}}.png"></div>-->
+
+	<div id="chatter"><p><i>National Journal</i> has rounded up {{candidate.name}}'s positions on today's most important political issues. We'll update as the season rolls along, so stay tuned for new posts and updates as candidates change or clarify their stances.</p></div>
+
 	
 	<div id="bottom">
 		<div id="cards">
@@ -14,11 +19,15 @@
 				<div id="card_lower">
 
 					<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
-					
-					<div class="quote"><p class="demo-icon" ng-class="{blueForeground: candidate.party == 'D', redForeground: candidate.party == 'R'}">&#xe800;</p><p>{{item.quote}}</p>
-					</div><!--quote-->
 
-					<div class="byline"><p>Last updated: 00/00/00</p></div>
+					<div class="quote"><div class="quote_text"><div class="demo-icon" ng-class="{blueForeground: candidate.party == 'D', redForeground: candidate.party == 'R'}">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>
+
+					<!--<div id="container">-->
+
+					<!--<div class="context"><p ng-bind-html="renderHTML(item.context)" ></p></div>-->
+
+					<div class="date"><p>Last updated: {{moment(item.updated).format("MM/YYYY")}}</p></div>
+					<!--</div>-->
 
 				
 				</div><!--card lower-->
@@ -26,6 +35,8 @@
 		</div><!--cards-->
 
 	</div> <!--bottom-->
-	<ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
+		<ng-include src="'/app/templates/snippets/footer.html'"></ng-include>
+
+
 </div> <!--content-->
 

@@ -8,26 +8,27 @@
 
 <h3>TwentySixteen Presidential Candidates:<br />Where They Stand</h3>
 
-<div id="chatter"><p><i>National Journal</i> has rounded up the core positions of the presidential contenders on some of today's most important political issues. We plan to update this platform as the season rolls along, so stay tuned for posts on additional topics, and updates as candidates change or clarify their stances.</p></div>
+<div id="chatter"><p><i>National Journal</i> has rounded up the positions of the 2016 presidential contenders on some of today's most important political issues. We'll update as the season rolls along, so stay tuned for new posts and updates as candidates change or clarify their stances.</p></div>
 
 <div id="menu">
 			<div class="header">
-				<a href="#"><p><span>Get started by</span> selecting an issue</p></a>
+				<p><span>Get started by</span> selecting an issue</p>
 			</div>
 			<ul class="options" id="issues">
 				<li ng-repeat="issue in $parent.issues"><a href="#/issues/{{issue.title}}"><p>{{issue.title}}</p></a></li>
 			</ul>
 
 			<ul class="header">
-				<a href="#"><p><span>or by</span> selecting a candidate</p></a>
+				<p><span>or by</span> selecting a candidate</p>
 			</ul>
 			<ul class="options" id="cand">
-				<li ng-repeat="candidate in $parent.candidates"><a href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}" ></div><p>{{candidate.first_name}}<br>{{candidate.last_name}}</p></div></a></li>
+				<li ng-class="{inactive: candidate.active == 'n'}" ng-repeat="candidate in $parent.candidates"><a href="#/candidates/{{candidate.name}}"><div class="candidate_zone"><div class="portrait" style="background-image: url('images/{{candidate.last_name.replace('\'','\\\'')}}.png');" ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}" ></div><p>{{candidate.first_name}}<br>{{candidate.last_name}}</p></div></a></li>
 			</ul>
 
 	
 </div>
-
-	<ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
+<ng-include src="'/app/templates/snippets/footer.html'"></ng-include>
 </div> <!--content-->
+
+
 
