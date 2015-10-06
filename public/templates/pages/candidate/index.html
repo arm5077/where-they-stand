@@ -9,6 +9,7 @@
 
 	<div id="chatter"><p><i>National Journal</i> has rounded up {{candidate.name}}'s positions on today's most important political issues. We'll update as the season rolls along, so stay tuned for new posts and updates as candidates change or clarify their stances.</p></div>
 
+	<div class="inactive_cand" ng-if="candidate.active == 'n'">Dropped out of race</div>
 	
 	<div id="bottom">
 		<div id="cards">
@@ -22,12 +23,12 @@
 
 					<div class="quote"><div class="quote_text"><div class="demo-icon" ng-class="{blueForeground: candidate.party == 'D', redForeground: candidate.party == 'R'}">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>
 
-					<!--<div id="container">-->
+					<div id="container">
 
-					<!--<div class="context"><p ng-bind-html="renderHTML(item.context)" ></p></div>-->
+					<div class="context"><p ng-bind-html="renderHTML(item.context)"></p></div>
 
 					<div class="date"><p>Last updated: {{moment(item.updated).format("MM/YYYY")}}</p></div>
-					<!--</div>-->
+					</div>
 
 				
 				</div><!--card lower-->
@@ -40,3 +41,4 @@
 
 </div> <!--content-->
 
+<!--<div class="context" ng-bind-html="renderHTML(item.context)"></div>-->
