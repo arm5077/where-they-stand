@@ -1,7 +1,8 @@
 <ng-include src="'/app/templates/snippets/header.html'"></ng-include>
 <ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
-<div id="content">
-	<div class="kicker"><ng-include src="'/app/templates/snippets/kicker.html'"></ng-include></div>
+<div class="kicker"><ng-include src="'/app/templates/snippets/kicker.html'"></ng-include></div>
+
+<div id="content" ng-click="showNav = false">
 	<h3>Where the candidates stand on {{issue.title}}</h3>
 	<div id="name_date"><h4><span><i class="fa fa-chevron-right"></i></span> By {{issue.author}}</h4>
 	<!--<p>Last updated: {{moment(issue.updated).format("M/D/YYYY")}}</p>--></div>

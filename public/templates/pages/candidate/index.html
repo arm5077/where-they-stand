@@ -1,8 +1,9 @@
 <ng-include src="'/app/templates/snippets/header.html'"></ng-include>
 <ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
-<div id="content">
+<div class="kicker"><ng-include src="'/app/templates/snippets/kicker.html'"></ng-include></div>
+<div id="content" ng-click="showNav = false">
 	
-	<div class="kicker"><ng-include src="'/app/templates/snippets/kicker.html'"></ng-include></div>
+	
 	<h3>Where {{candidate.name}} stands on all the issues</h3>
 
 	<!--<div class="big_photo" ng-repeat="item in issues.candidates"><img ng-src="images/{{item.name.substr(item.name.indexOf(' ')+1,100)}}.png"></div>-->
