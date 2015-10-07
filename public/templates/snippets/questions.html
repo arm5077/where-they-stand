@@ -4,7 +4,15 @@
 	</tr>	
 
 	<tr>
-		<td ng-repeat="question in item.questions" ng-if="question.longAnswer || question.shortAnswer"><h2 ng-if="question.shortAnswer" ng-class="{blue: candidate.party == 'D' || item.party == 'D', red: candidate.party == 'R' || item.party == 'R'}">{{question.shortAnswer}}</h2></td>
+		<td ng-repeat="question in item.questions" ng-if="question.longAnswer || question.shortAnswer">
+			
+			<div class="marker_yes" ng-if="question.shortAnswer == 'Yes.'" ng-class="{blueForeground: candidate.party == 'D' || item.party == 'D', redForeground: candidate.party == 'R' || item.party == 'R'}"><i class="fa fa-check"></i><h2>{{question.shortAnswer}}</h2></div>
+
+			<div class="marker_no" ng-if="question.shortAnswer == 'No.'" ng-class="{blueForeground: candidate.party == 'D' || item.party == 'D', redForeground: candidate.party == 'R' || item.party == 'R'}"><div class="x"><i class="fa fa-times"></i></div><h2>{{question.shortAnswer}}</h2></div>
+
+			<div class="marker_unclear" ng-if="question.shortAnswer == 'Unclear.'" ng-class="{blueForeground: candidate.party == 'D' || item.party == 'D', redForeground: candidate.party == 'R' || item.party == 'R'}"><i class="fa fa-question"></i><h2>{{question.shortAnswer}}</h2></div>
+
+		</td>
 	</tr>
 
 	<tr>

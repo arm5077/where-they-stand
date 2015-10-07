@@ -10,7 +10,7 @@
 
 	<div id="chatter"><p><i>National Journal</i> has rounded up {{candidate.name}}'s positions on today's most important political issues. We'll update as the season rolls along, so stay tuned for new posts and updates as candidates change or clarify their stances.</p></div>
 
-	<div class="inactive_cand" ng-if="candidate.active == 'n'">Dropped out of race</div>
+	<div class="dropout"><div class="inactive_cand" ng-if="candidate.active == 'n'">Dropped out of race</div></div>
 	
 	<div id="bottom">
 		<div id="cards">
@@ -22,7 +22,7 @@
 
 					<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
 
-					<div class="quote"><div class="quote_text"><div class="demo-icon" ng-class="{blueForeground: candidate.party == 'D', redForeground: candidate.party == 'R'}">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>
+					<div class="quote"><div class="quote_text"><div class="demo-icon">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>
 
 					<div id="container">
 
@@ -43,3 +43,5 @@
 </div> <!--content-->
 
 <!--<div class="context" ng-bind-html="renderHTML(item.context)"></div>-->
+
+<!--<div class="quote"><div class="quote_text"><div class="demo-icon" ng-class="{blueForeground: candidate.party == 'D', redForeground: candidate.party == 'R'}">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>-->
