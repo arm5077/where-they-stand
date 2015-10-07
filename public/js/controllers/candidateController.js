@@ -11,7 +11,7 @@ angular.module("angularApp")
 	$http.get("/api/candidates/" + $routeParams.candidate).success(function(data){
 		$scope.candidate = data;
 
-		$scope.title = "Where " + $scope.candidate.name + " stands on all the issues";
+		$rootScope.title = "Where " + $scope.candidate.name + " stands on all the issues";
 		$scope.$parent.pageTitle = $scope.candidate.name;
 
 		// Set "done" loading to true

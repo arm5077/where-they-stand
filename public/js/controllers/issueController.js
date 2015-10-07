@@ -12,7 +12,7 @@ angular.module("angularApp")
 		$scope.issue = data;
 		
 		// Set title
-		$scope.title = "The 2016 Candidates on " + $scope.issue.title;
+		$rootScope.title = "The 2016 Candidates on " + $scope.issue.title;
 		$scope.$parent.pageTitle = $scope.issue.title;
 		
 		// Set "done" loading to true
