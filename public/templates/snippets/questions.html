@@ -1,27 +1,32 @@
 <table class = "desktop">
 	<tr>
-		<td ng-repeat="question in item.questions"><h1 ng-if="question.longAnswer">{{question.question}}</h1></td>
+		<td ng-repeat="question in item.questions" ng-if="question.longAnswer || question.shortAnswer"><h1>{{question.question}}</h1></td>
 	</tr>	
 
 	<tr>
-		<td ng-repeat="question in item.questions"><h2 ng-if="question.shortAnswer" ng-class="{blue: candidate.party == 'D' || item.party == 'D', red: candidate.party == 'R' || item.party == 'R'}">{{question.shortAnswer}}</h2></td>
+		<td ng-repeat="question in item.questions" ng-if="question.longAnswer || question.shortAnswer"><h2 ng-if="question.shortAnswer" ng-class="{blue: candidate.party == 'D' || item.party == 'D', red: candidate.party == 'R' || item.party == 'R'}">{{question.shortAnswer}}</h2></td>
 	</tr>
 
 	<tr>
-		<td ng-repeat="question in item.questions"><p ng-bind-html="renderHTML(question.longAnswer)"></p></td>	
+		<td ng-repeat="question in item.questions" ng-if="question.longAnswer || question.shortAnswer"><p ng-bind-html="renderHTML(question.longAnswer)"></p></td>	
 	</tr>
 </table>
 
-<div class= "mobile questions" ng-repeat="question in item.questions">
+
+
+
+
+<div class= "mobile questions" ng-repeat="question in item.questions" ng-if="question.longAnswer">
 	<div class="question">
 		<p>{{question.question}}</p>
 	</div>
 
 	<div class="short_answer" ng-show="question.shortAnswer">
-		<p ng-class="{blue: candidate.party == 'D', red: candidate.party == 'R'}">{{question.shortAnswer}}</p>
+		<p ng-if="question.shortAnswer" ng-class="{blue: candidate.party == 'D' || item.party == 'D', red: candidate.party == 'R' || item.party == 'R'}">{{question.shortAnswer}}</p>
 	</div>
 
 	<div class="long_answer">
-		<p>{{question.longAnswer}}</p>
+		<p ng-bind-html="renderHTML(question.longAnswer)"></p>
 	</div>
 </div>
+

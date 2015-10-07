@@ -24,11 +24,13 @@
 
 /*/////DROPDOWN MENUS/////*/
 #menudrop{
-	margin-top:35px;
+	margin-top: -1px;
+	padding-top: 1px;
 	width: 100%;
 	display: inline-block;
-	margin: auto;
+	/*margin: auto;*/
 	vertical-align: top;
+	background-color: #e6e6e6;
 	position: fixed;
 	left: 0;
 	top: 51px;
@@ -132,7 +134,7 @@
 	}
 
 #canddrop p{
-	margin: 2px 0 0 10px;
+	margin: 2px 0 0 0;
 	font-weight: 300;
 	font-size: 11pt;
 }
@@ -162,6 +164,7 @@
 	background-image: url("images/clinton.png");
 	background-size: cover;
 	border-right: 2px solid #e8e8e8;
+	margin-right: 10px;
 }
 
 .dems .portrait{
@@ -182,10 +185,7 @@ p, h1, h2, h3, h4, li{
 	margin: 0;
 }
 
-html{
-}
-
-body {
+body{
 	margin: 0;
 }
 
@@ -355,6 +355,18 @@ h4 span{
 	line-height: 20pt;
 }
 
+.inactive_cand{
+	font-size: 12pt;
+	font-family: Roboto;
+	color: #404040;
+	float: left;
+	text-transform: uppercase;
+	width: 100%;
+	margin-bottom: 20px;
+	font-style: italic;
+	}
+
+
 /*//////////HOMEPAGE ONLY////////////*/
 
 .header{
@@ -398,7 +410,6 @@ h4 span{
 	margin: 0 .4% 6px 0;
 	height: 50px;
 	float: left;
-	width: 150px;
 }
 
 #issues{
@@ -410,6 +421,7 @@ h4 span{
 	margin: 0 4px 6px 0;
 	float: left;
 	display: inline-block;
+	
 	}
 
 #issues p{
@@ -442,6 +454,7 @@ h4 span{
 
 #cand{
 	padding: 22px 2% 12px 2%;
+	margin-bottom: 40px;
 }
 
 #cand li{
@@ -453,7 +466,7 @@ h4 span{
 }
 
 #cand p{
-	margin: 2px 0 0 10px;
+	margin: 2px 0 0 0;
 	font-weight: 300;
 	font-size: 11pt;
 }
@@ -513,17 +526,19 @@ h4 span{
 .card_title img{
 	width: 50px;
 	display: inline-block;
+	float: left;
 }
 
 .card_title p{
 	font-weight: 700;
+	font-family: 'Roboto Slab';
 	color: #fff;
-	letter-spacing: .02em;
-	line-height: 52px;
-	margin-left: 1%;
+	line-height: 50px;
+	margin-left: 12px;
 	display: inline-block;
 	vertical-align: top;
 	font-size: 15pt;
+	float: left;
 }
 
 .card_title p span{
@@ -532,12 +547,29 @@ h4 span{
 	opacity: .8;
 }
 
+.card_title .inactive_cand{
+	margin: 0 20px 0 0;
+	float: right;
+	height: 50px;
+	line-height: 53px;
+	color: #fff;
+	font-style: normal;
+	width: auto;
+	opacity: .8;
+	}
+
 #card_lower{
 	width: 96%;
 	padding: 2%;
 	float: left;
 	background-color: #e8e8e8;
 	margin-bottom: 20px;
+	/*border-bottom: 3px solid rgba(233, 69, 60, .9);
+	border-left: 3px solid rgba(233, 69, 60, .9);
+	border-right: 3px solid rgba(233, 69, 60, .9);*/
+	-webkit-box-shadow:inset 0px 0px 0px 3px rgba(233, 69, 60, .9);
+    -moz-box-shadow:inset 0px 0px 0px 3px rgba(233, 69, 60, .9);
+    box-shadow:inset 0px 0px 0px 3px rgba(233, 69, 60, .9);
 }
 
 table{
@@ -547,22 +579,23 @@ table{
 table h1{
 	font-weight: 900;
 	margin: 0 0 10px 0;
+	font-size: 13pt;
+	line-height: 1.3
 }
 
 table h2{
 	font-weight: 300;
-	font-size: 11pt;
 	text-transform: uppercase;
 	padding: .2em .4em .2em .35em;
 	color: #e8e8e8;
 	display: inline-block;
-	margin: 0 0 20px 0;
+	margin: 0 0 10px 0;
 }
 
 table p{
 	margin: 0;
-	font-size: 11pt;
 	padding: 0;
+	line-height: 1.4;
 }
 
 td{
@@ -577,27 +610,85 @@ td:nth-child(3){
 
 .quote{
 	width: 100%;
-	display: block;
+	display: inline-block;
 	border-top: 1pt solid #aaa;
 	margin-top: 20px;
-	padding-bottom: 0;
+	padding: 20px 0 0 0;
 }
 
-.quote p{
-	font-size: 11pt;
-	margin-top: 20px;
+.quote_text{
+	float: left;
+	display: inline-block;
+	width: 100%;
+}
+
+.quote_text p{
+	font-size: 15pt;
+	font-family: 'Roboto Slab';
+	color: #585858;
+	font-weight: 400;
+}
+
+#container{
+	display: inline-block;
+	float: left;
+	width: 100%;
+}
+
+.context p{
+	font-size: 12pt;
+	color: #999;
+	margin: 20px 0 0 0;
+	float: left;
+	text-transform: uppercase;
 }
 
 .date p{
 	font-size: 12pt;
 	color: #999;
 	margin-top: 20px;
+	float: right;
 }
 
-.q{}
+.q{
+	font-family: Georgia;
+	font-size: 45pt;
+	color: rgba(233, 69, 60, .9);
+}
+
+/*/////////////FOOTER///////////////*/
+
+#footer{
+	width: 100%;
+	display: inline-block;
+	border-top: 1px solid #aaa;
+	padding: 10px 0 10px 0;
+}
+
+
+#footer img{
+	height: 24px;
+	margin: 0 10px 0 0;
+	width: auto;
+	display: inline-block;
+	float: left;
+}
+
+#footer p{
+	font-weight: 300;
+	color: #4f4f4f;
+	display: inline-block;
+	font-size: 12pt;
+	text-align: right;
+	float: right;
+}
+
+#footer span{
+	font-weight: 700;
+}
 
 /* // Mobile */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
 
 	#canddrop li.mobile {
 		display: inline-block;
@@ -606,12 +697,12 @@ td:nth-child(3){
 	#card_lower{
 		width: 88%;
 		padding: 6%;
+		box-shadow: none;
 	}
 
 	#menudrop{
 		position: relative;
 		margin-top: 0;
-
 		display: block;
 		margin: auto;
 		margin-bottom: 20px;
@@ -633,7 +724,7 @@ td:nth-child(3){
 	}
 	
 	#canddrop li.mobile {
-		margin: 2px 0 0 10px;
+		margin: 2px 0 0 0;
 		font-weight: 300;
 		font-size: 11pt;
 		color: inherit;
@@ -650,15 +741,35 @@ td:nth-child(3){
 	#canddrop li.desktop {
 		display: none;
 	}
-		
+
+	.kicker{
+		position: fixed;
+		background-color: #fff;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 12px 0 0 12px;
+		width: 100%;
+		height: 50px;
+		margin: 0;
+	}
+
+	#long_logo{
+	margin: 0 10px 0 0; 
+ 	}
+
 	h3 {
 		font-size: 25pt;
+		display: inline-block;
+		margin: 60px 15px 15px 0px;
 	}
 	
 	#chatter p {
 		font-size: 13pt;
 		line-height: 19pt;
+		margin: 0 15px 0 0;
 	}
+
 	
 	.desktop {
 		display: none;
@@ -668,6 +779,25 @@ td:nth-child(3){
 		display: block;
 	}
 	
+	.card_title p{
+	font-size: 13pt;
+	}
+
+	.card_title p span{
+	font-size: 12pt;
+	}
+
+	.card_title .inactive_cand{
+	margin: 0 20px 0 0;
+	float: right;
+	height: 50px;
+	line-height: 52px;
+	color: #fff;
+	font-style: normal;
+	width: auto;
+	font-size: 10pt;
+	}
+
 	.questions {
 		margin-bottom: 25px;
 	}
@@ -679,13 +809,13 @@ td:nth-child(3){
 	.question p{
 		font-weight: 900;
 		margin: 0 0 10px 0;
+		font-size: 13pt;
+		line-height: 1.3;
 	}
 
 	.short_answer p{
 		font-weight: 300;
-		font-size: 11pt;
 		text-transform: uppercase;
-
 		padding: .2em .4em .2em .35em;
 		color: #e8e8e8;
 		display: inline-block;
@@ -694,11 +824,23 @@ td:nth-child(3){
 
 	.long_answer p{
 		margin: 0;
-		font-size: 11pt;
+		line-height: 1.4;
 		padding: 0;
 	}
 
 	.question, .short_answer, .long_answer{
 		vertical-align: top;
+	}
+
+	#footer img{
+	display: none;
+	}
+
+	.quote_text p{
+	font-size: 13pt;
+	}
+
+	.quote{
+		margin-top: 0;
 	}
 }

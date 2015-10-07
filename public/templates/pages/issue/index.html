@@ -1,7 +1,7 @@
 <ng-include src="'/app/templates/snippets/header.html'"></ng-include>
 <ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
 <div id="content">
-	<ng-include src="'/app/templates/snippets/kicker.html'"></ng-include>
+	<div class="kicker"><ng-include src="'/app/templates/snippets/kicker.html'"></ng-include></div>
 	<h3>Where the candidates stand on {{issue.title}}</h3>
 	<div id="name_date"><h4><span><i class="fa fa-chevron-right"></i></span> By {{issue.author}}</h4>
 	<!--<p>Last updated: {{moment(issue.updated).format("M/D/YYYY")}}</p>--></div>
@@ -11,15 +11,22 @@
 <div id="bottom">
 	<div id="cards">
 		<div class="card" ng-repeat="item in issue.candidates">
-			<div class="card_title" ng-class="{blue: item.party == 'D', red: item.party=='R'}"><a ng-href="#/candidates/{{item.name}}"><img ng-src="images/{{item.name.substr(item.name.indexOf(' ')+1,100)}}.png"><p>{{item.name}}</p></a></div>
+			<div class="card_title" ng-class="{blue: item.party == 'D', red: item.party=='R'}"><a ng-href="#/candidates/{{item.name}}"><img ng-src="images/{{item.name.substr(item.name.indexOf(' ')+1,100)}}.png"><p>{{item.name}}</p></a> <div class="inactive_cand" ng-if="item.active == 'n'">Dropped out of race</div></div>
 			<div id="card_lower">
 
 				<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
-			
-				<div class="quote"><p class="demo-icon">&#xe800;</p><p>{{item.quote}}</p>
+
+				<div class="quote"><div class="quote_text"><div class="demo-icon" ng-class="{blueForeground: item.party == 'D', redForeground: item.party == 'R'}">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>
+
 				</div><!--quote-->
+
+				<div id="container">
+
+					<div class="context"><p ng-bind-html="renderHTML(item.context)"></p></div>
 				
-				<div class="date"><p>Last updated: {{moment(item.updated).format("M/D/YYYY")}}</p></div>
+				<div class="date"><p>Last updated: {{moment(item.updated).format("MM/YYYY")}}</p></div>
+
+				</div>
 				
 			</div><!--card lower-->
 		</div>
@@ -27,8 +34,12 @@
 		</div><!--cards-->
 
 </div> <!--bottom-->
-
 	<ng-include src="'/app/templates/snippets/footer.html'"></ng-include>
 
+
 </div> <!--content-->
+
+<!--<div class="quote"><p class="demo-icon" ng-class="{blueForeground: item.party == 'D', redForeground: item.party == 'R'}">&#xe800;</p><div class="quote_text"><p ng-bind-html="renderHTML(item.quote)" ></p></div>-->
+
+<!--<div class="quote"><div class="demo-icon" ng-class="{blueForeground: item.party == 'D', redForeground: item.party == 'R'}">&#xe800;</div><div class="quote_text"><p ng-bind-html="renderHTML(item.quote)" ></p></div>-->
 
