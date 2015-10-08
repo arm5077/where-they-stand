@@ -107,7 +107,7 @@ app.get("/api/issues/:issue", function(request, response){
 		connection.query('SELECT * FROM positions JOIN issues ON issues.issue_id = positions.issue_id JOIN quotes ON quotes.issue_id = positions.issue_id AND quotes.candidate = positions.candidate JOIN candidates ON candidates.name = positions.candidate WHERE issues.title = ?', 
 		[request.params.issue], function(err, rows){
 			if(err) throw err;
-			issue = {title: request.params.issue, intro: rows[0].intro, author: rows[0].author, candidates: []};
+			issue = {title: request.params.issue, intro: rows[0].intro.replace(/(\n)+/g, '<br /><br />'), author: rows[0].author, candidates: []};
 			
 			rows.forEach(function(row){
 				// Has this isue been pushed to the array yet?
