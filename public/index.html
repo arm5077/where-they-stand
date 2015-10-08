@@ -5,6 +5,8 @@
 
 	<title ng-bind="'Where The 2016 Candidates Stand | ' + pageTitle"></title>
 	
+	<link rel="icon" type="image/x-icon" href="http://www.nationaljournal.com/static/images/favicon.ico" />
+	
 	<meta property="og:title" content="Where The 2016 Candidates Stand | Tracking campaign positions" />
 	<meta property="og:description" content="The definitive guide of the 2016 presidential candidates' positions on important issues." />
 	<meta property="og:type" content="article" />
@@ -69,10 +71,15 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="fontello.css">
+	
+	<meta name="google-site-verification" content="epm1DzaMlbB_hxE-x8QehB8a-WkgBNmTnmshWHsGc3s" />
 </head>
 
 <body>
-	<div class="content" ng-view="" autoscroll=""></div>
+	<ng-include ng-hide="done" src="'/app/templates/pages/loader/index.html'"></ng-include>
+	<ng-include src="'/app/templates/snippets/header.html'"></ng-include>
+	<ng-include src="'/app/templates/snippets/nav.html'"></ng-include>
+	<div class="content" ng-view="" autoscroll="" ng-click="$parent.showNav = false"></div>
 </body>
 
 <script type="text/javascript" src="js/app.js"></script>

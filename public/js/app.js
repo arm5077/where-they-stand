@@ -16,4 +16,23 @@ angular.module("angularApp", ['ngRoute', 'pc035860.scrollWatch'])
 		$scope.issues = data;
 	});
 	
-}]);
+	// FORGIVE ME FATHER FOR THIS IS A TERRIBLE HACKKKKK
+	$scope.toggleNav = function(){
+		setTimeout(function(){
+			$scope.$apply(function(){
+				$scope.showNav = true;
+				console.log($scope.showNav);
+			});
+		}, 100);
+
+	}
+	
+}])
+.directive("center", function(){
+	return {
+		link: function(scope, element, attr) {
+			console.log(window.innerHeight);
+			element[0].style.marginTop = ((window.innerHeight - element[0].offsetHeight) / 2) + "px"
+		}
+	};	
+});
