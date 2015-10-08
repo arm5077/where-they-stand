@@ -21,7 +21,7 @@
 
 					<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
 
-					<div class="quote"><div class="quote_text"><div class="demo-icon">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>
+					<div class="quote" ng-if="item.quote"><div class="quote_text"><div class="demo-icon">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>
 
 					<div id="container">
 
