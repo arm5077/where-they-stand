@@ -14,6 +14,8 @@
 			<div class="card_title" ng-class="{blue: item.party == 'D', red: item.party=='R'}"><a ng-href="#/candidates/{{item.name}}"><img ng-src="images/{{item.name.substr(item.name.indexOf(' ')+1,100)}}.png"><p>{{item.name}}</p></a> <div class="inactive_cand" ng-if="item.active == 'n'">|&nbsp; Dropped out of race</div></div>
 			<div id="card_lower">
 
+				<div class="inactive_cand" ng-if="item.active == 'n'">Dropped out of race</div>
+
 				<ng-include src="'/app/templates/snippets/questions.html'"></ng-include>
 
 				<div class="quote"><div class="quote_text"><div class="demo-icon">&#xe800;</div><p ng-bind-html="renderHTML(item.quote)" ></p></div>

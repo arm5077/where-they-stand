@@ -568,6 +568,10 @@ h4 span{
 	font-family: Roboto;
 	text-transform: uppercase;
 	}
+
+#card_lower .inactive_cand{
+	display: none;
+}
 	
 #card_lower{
 	width: 96%;
@@ -703,10 +707,6 @@ td:nth-child(3){
 /* // Mobile */
 @media screen and (max-width: 850px) {
 
-	#canddrop li.mobile {
-		display: inline-block;
-	}
-
 	#card_lower{
 		width: 88%;
 		padding: 6%;
@@ -737,10 +737,13 @@ td:nth-child(3){
 	}
 	
 	#canddrop li.mobile {
-		margin: 2px 0 0 0;
 		font-weight: 300;
 		font-size: 11pt;
 		color: inherit;
+		display: inline-block;
+		height: 30px;
+		margin: 0 15px 6px 0;
+		width: auto;
 	}
 	
 		#canddrop li.mobile a {
@@ -748,12 +751,29 @@ td:nth-child(3){
 		}
 		
 		#canddrop li.mobile:hover {
-			text-decoration: underline;
+			background-color:#d5d5d5;
 		}
+
+		#canddrop .mobile{
+		line-height: 30px;
+		padding: 0 6px 0 6px;
+		vertical-align: top;
+		font-weight: 300pt;
+		font-size: 11pt;
+		border-radius: 8px;
+		transition: all 0.2s ease 0s;
+		letter-spacing: .03em;
+	}
+
+	#canddrop li.mobile .fa{
+		font-size: 9pt;
+		color: #888;
+	}
 		
 	#canddrop li.desktop {
 		display: none;
 	}
+
 
 	.kicker{
 		position: fixed;
@@ -805,13 +825,18 @@ td:nth-child(3){
 	display: none;
 	}
 
+
 	.card_title .inactive_cand{
-	margin: 0 20px 0 0;
-	height: 50px;
-	line-height: 52px;
-	color: #fff;
-	font-style: normal;
-	font-size: 10pt;
+		display: none;
+	}
+
+	#card_lower .inactive_cand{
+	display: inline-block;
+	margin: 0 0 20px 0;
+	font-size: 11pt;
+	font-family: Roboto;
+	text-transform: uppercase;
+	color: #999;
 	}
 
 	.questions {
@@ -830,13 +855,13 @@ td:nth-child(3){
 	}
 
 	.short_answer p{
-		font-weight: 300;
+		font-weight: 700;
 		text-transform: uppercase;
-		padding: .2em .4em .2em .35em;
-		color: #e8e8e8;
 		display: inline-block;
-		margin: 0 0 10px 0;
+		margin: 0 0 18px 7px;
+		font-size: 13pt;
 	}
+
 
 	.long_answer p{
 		margin: 0;
