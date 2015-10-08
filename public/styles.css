@@ -151,9 +151,9 @@
 	height: 30px;
 	margin: 0 4px 6px 0;
 	float: left;
-	width: 100%;
 	display: inline-block;
 	}
+
 
 #issuesdrop p:hover{
 	background-color:#d5d5d5;
@@ -782,6 +782,10 @@ td:nth-child(3){
 
 	#navbar {
 		display: none;
+	}
+
+	#issuesdrop li{
+		width: 100%;
 	}
 	
 	#canddrop li.mobile {
