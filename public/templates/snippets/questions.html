@@ -22,18 +22,24 @@
 
 
 
-
-
-<div class= "mobile questions" ng-repeat="question in item.questions" ng-if="question.longAnswer">
+<div class= "mobile questions" ng-repeat="question in item.questions" ng-if="question.longAnswer || question.shortAnswer">
 	<div class="question">
 		<p>{{question.question}}</p>
 	</div>
 
-	<div class="short_answer" ng-show="question.shortAnswer">
-		<p ng-if="question.shortAnswer" ng-class="{blue: candidate.party == 'D' || item.party == 'D', red: candidate.party == 'R' || item.party == 'R'}">{{question.shortAnswer}}</p>
+	<div class="short_answer" ng-show="question.longAnswer || question.shortAnswer">
+
+	<div class="marker_yes" ng-if="question.shortAnswer == 'Yes.'" ng-class="{blueForeground: candidate.party == 'D' || item.party == 'D', redForeground: candidate.party == 'R' || item.party == 'R'}"><i class="fa fa-check"></i><p>{{question.shortAnswer}}</p></div>
+
+
+	<div class="marker_no" ng-if="question.shortAnswer == 'No.'" ng-class="{blueForeground: candidate.party == 'D' || item.party == 'D', redForeground: candidate.party == 'R' || item.party == 'R'}"><div class="x"><i class="fa fa-times"></i></div><p>{{question.shortAnswer}}</p></div>
+
+
+	<div class="marker_unclear" ng-if="question.shortAnswer == 'Unclear.'" ng-class="{blueForeground: candidate.party == 'D' || item.party == 'D', redForeground: candidate.party == 'R' || item.party == 'R'}"><i class="fa fa-question"></i><p>{{question.shortAnswer}}</p></div>
+
 	</div>
 
-	<div class="long_answer">
+	<div class="long_answer" ng-show="question.longAnswer || question.shortAnswer">
 		<p ng-bind-html="renderHTML(question.longAnswer)"></p>
 	</div>
 </div>
