@@ -759,7 +759,7 @@ td:nth-child(3){
 	}
 
 	.header p{
-		line-height: 0px;
+		/*line-height: 0px;*/
 	}
 
 	.options{
