@@ -759,11 +759,11 @@ td:nth-child(3){
 	}
 
 	.header p{
-		line-height: 22px;
+		line-height: 25px;
 	}
 
-	.options{
-	padding: 12px 4% 12px 4%;
+	#cand{
+	padding: 8px 4% 8px 4%;
 }
 
 	/*.candidate_zone{
@@ -774,7 +774,6 @@ td:nth-child(3){
 	#cand li{
 	width: 140px;
 }
-
 
 	.portrait{
 		width: 40px;
