@@ -759,16 +759,26 @@ td:nth-child(3){
 	}
 
 	.header p{
-		/*line-height: 0px;*/
+		line-height: 22px;
 	}
 
 	.options{
 	padding: 12px 4% 12px 4%;
 }
 
-	.candidate_zone{
+	/*.candidate_zone{
 	margin: 0 15px 5px 0;
-	width: 40%;
+	width: 130px;
+	}*/
+
+	#cand li{
+	width: 140px;
+}
+
+
+	.portrait{
+		width: 40px;
+		height: 40px;
 	}
 
 	#card_lower{
