@@ -763,7 +763,7 @@ td:nth-child(3){
 	}
 
 	#cand{
-	padding: 8px 4% 8px 4%;
+	padding: 10px 4% 10px 4%;
 }
 
 	/*.candidate_zone{
@@ -772,7 +772,7 @@ td:nth-child(3){
 	}*/
 
 	#cand li{
-	width: 140px;
+	width: 130px;
 }
 
 	.portrait{
