@@ -753,6 +753,24 @@ td:nth-child(3){
 /* // Mobile */
 @media screen and (max-width: 850px) {
 
+	.header{
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	.header p{
+		line-height: 0px;
+	}
+
+	.options{
+	padding: 12px 4% 12px 4%;
+}
+
+	.candidate_zone{
+	margin: 0 15px 5px 0;
+	width: 40%;
+	}
+
 	#card_lower{
 		width: 88%;
 		padding: 6%;
