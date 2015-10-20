@@ -13,7 +13,8 @@ angular.module("angularApp")
 			clearInterval(timer);
 		}
 	}, 250);
-	
+
+	$rootScope.showHeader = false;
 	$scope.candidates = $scope.$parent.candidates;
 	$scope.issues = $scope.$parent.issues;
 }]);

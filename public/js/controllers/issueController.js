@@ -12,6 +12,7 @@ angular.module("angularApp")
 		$scope.issue = data;
 		
 		// Set title
+		$rootScope.showHeader = true;
 		$rootScope.title = "The 2016 Candidates on " + $scope.issue.title;
 		$scope.$parent.pageTitle = $scope.issue.title;
 		

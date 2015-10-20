@@ -260,6 +260,11 @@ body{
 		top: -60px;
 	}
 
+
+	#navbar.permanentHide {
+		display: none;
+	}
+	
 #navbar p{
 	font-weight: 300;
 	color: #e8e8e8;

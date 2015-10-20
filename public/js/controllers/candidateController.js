@@ -11,6 +11,7 @@ angular.module("angularApp")
 	$http.get("/api/candidates/" + $routeParams.candidate).success(function(data){
 		$scope.candidate = data;
 
+		$rootScope.showHeader = true;
 		$rootScope.title = "Where " + $scope.candidate.name + " stands on all the issues";
 		$scope.$parent.pageTitle = $scope.candidate.name;
 
